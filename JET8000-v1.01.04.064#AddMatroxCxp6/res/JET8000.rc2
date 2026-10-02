@@ -1,0 +1,64 @@
+//
+// JET8000.RC2 - resources Microsoft Visual C++ does not edit directly
+//
+
+#ifdef APSTUDIO_INVOKED
+	#error this file is not editable by Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+#include "VersionDefine.h"
+
+/////////////////////////////////////////////////////////////////////////////
+// Add manually edited resources here...
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    AOI3D_ICON_FILE
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_MAIN_APP            BITMAP                  AOI3D_BMP_FILE
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION AOI3D_FILE_VERSION
+ PRODUCTVERSION AOI3D_APP_VERSION
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040404b0"
+        BEGIN
+            VALUE "CompanyName", AOI3D_VENDOR_A
+            VALUE "FileDescription", AOI3D_APP_NAME_A
+            VALUE "FileVersion", AOI3D_FILE_VERSION_A
+            VALUE "InternalName", AOI3D_APP_NAME_A
+            VALUE "LegalCopyright", AOI3D_COPYRIGHTS_A
+            VALUE "OriginalFilename", AOI3D_APP_NAME_A
+            VALUE "ProductName", AOI3D_APP_NAME_A
+            VALUE "ProductVersion", AOI3D_APP_VERSION_A
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x404, 1200
+    END
+END
+/////////////////////////////////////////////////////////////////////////////

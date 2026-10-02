@@ -1,0 +1,17 @@
+﻿/JET8000_Library/
+**/.git/
+**/.vs/
+**/ipch/
+**/Debug/
+**/Release/
+*.obj
+*.pch
+*.pdb
+*.ilk
+*.idb
+*.tlog
+*.aps
+*.VC.db
+*.VC.VC.opendb
+*.suo
+*.user

@@ -1,0 +1,1 @@
+copy res\JET8000_Online.ico res\JET8000.ico

@@ -1,0 +1,1748 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{741aecc6-7a3d-410d-a7ae-ea09e4e50ebc}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{2ef5bdee-a569-4abc-944c-5883e601ab3b}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{cbdfb27a-b506-4333-a009-f23716995a31}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Cuda Files">
+      <UniqueIdentifier>{20b4ee6f-447e-43d3-812b-af8855340de7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="eVision Files">
+      <UniqueIdentifier>{24daf439-283a-416f-98ea-67247fceaa3e}</UniqueIdentifier>
+      <Extensions>h;cpp</Extensions>
+    </Filter>
+    <Filter Include="iVision Files">
+      <UniqueIdentifier>{6c2dff54-64f7-433f-8794-169d0c5ab102}</UniqueIdentifier>
+      <Extensions>h;cpp</Extensions>
+    </Filter>
+    <Filter Include="Barcode Device">
+      <UniqueIdentifier>{0bebba00-a503-420e-b052-7035f081f759}</UniqueIdentifier>
+      <Extensions>h;cpp</Extensions>
+    </Filter>
+    <Filter Include="Motion Device">
+      <UniqueIdentifier>{062257cd-0a8c-4d8b-82d0-0be5fac0aae9}</UniqueIdentifier>
+      <Extensions>h;cpp</Extensions>
+    </Filter>
+    <Filter Include="Camera Device">
+      <UniqueIdentifier>{5ca47474-a693-402e-b416-3fad95badd67}</UniqueIdentifier>
+      <Extensions>h;cpp</Extensions>
+    </Filter>
+    <Filter Include="AOIObj Files">
+      <UniqueIdentifier>{076290df-ce9f-4883-a7c8-9f3f21a90abd}</UniqueIdentifier>
+      <Extensions>h;cpp</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AOIDataCollect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BlobAnalysis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DIB.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Draw3DWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditFormView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageAPI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageDebugWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InputBoxWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JET8000.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JetAPIUtility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JetBlob.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JetMemDC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JetMemory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JetSerial.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MotionCtrlWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MotionParamPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MotionStatusPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewProjectFiducialPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewProjectIntrodPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewProjectLoadCadxyPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewProjectLoadLibraryPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewProjectPanelAlignPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewProjectRegionImagePane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewProjectWizardWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlcCtrlWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlcLaneAdjustPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlcLaneStatusPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlcNodeListPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlcTowerLightPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectParamBasicPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectParamWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemConfigWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemParamPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CudaFunc.cpp">
+      <Filter>Cuda Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AOISystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemInitialWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraCtrlWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AOIDataCollectThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RS232.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugFormView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ParamUni.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CalibrationWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CaliPaneAlign.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CaliPaneTargetSetting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ImagePhaseWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="3DUnWrapping.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AOIFileIO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TreeCtrlComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MapCoordinate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JETMatrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Jpegfile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JetFieldDivider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageMaskWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ImagePhaseAllWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JetZip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CudaCtrlWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageConfigWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JetUSBCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LightCtrlBoard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LightCtrlBoardWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RulerWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SortObj.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorRGBVWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertiesWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JETPropertyGridCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PageDialogbarPartNumber.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PageSplitterWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PaneTabCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TreeCtrlDef.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectMapPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditProjectMapDockPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditModelView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditWndDockPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelAddAllWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditImageDockPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditImageView3DPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LogManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LogNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditMainView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditImageBinaryWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditImageColorFilterWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditImageProcessPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DefectListWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JetMatch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditImagePatternWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditResultDockPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JETListCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JETTreeCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JetImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DtkBarcode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JetBarcode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditFdView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditBarcodeView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OnlineFormView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectRegionMapWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JetChart\JETChartView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JetChart\JetChart.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JetChart\JetSeries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemBasicPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemFolderPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemColorPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectParamPaneAlarm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AOIDataDefine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditComponentListDockPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditPartNumberListDockPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditModelListDockPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditLibraryDockPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditLibraryWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Light3DTiDLP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Light3DTiDLPWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Light3DTiFrmw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Light3DTiUsb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Light3DCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditImageView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditWndView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BarcodeConfirmWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectMapWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrayPasteWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectListWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectMarkWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UserRegisterWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UserLevelWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Plc_Basic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Plc_Vigor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AlgBlobCountWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AlgCharVerifyWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AlgBinaryParam.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PatternParam.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BarcodeDeviceWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BarcodeInputWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectColorWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InputComboxWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Light3DTiDLP_v3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Light3DTiFrmw_v3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Light3DTiUsb_v3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SpaceNoiseFilterParamWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditModelListPaneBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditPartNumberListPaneBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditResultPaneBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectMapMaskWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectLibraryWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewPanelWizardWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditImageBlobWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JETMFCListCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MotionModule\Include\MotionUnit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="eVision\EvsAPI.cpp">
+      <Filter>eVision Files</Filter>
+    </ClCompile>
+    <ClCompile Include="eVision\EvsBarcode1D.cpp">
+      <Filter>eVision Files</Filter>
+    </ClCompile>
+    <ClCompile Include="eVision\EvsBarcodeDataMatrix.cpp">
+      <Filter>eVision Files</Filter>
+    </ClCompile>
+    <ClCompile Include="eVision\EvsImageBW8.cpp">
+      <Filter>eVision Files</Filter>
+    </ClCompile>
+    <ClCompile Include="eVision\EvsImageC24.cpp">
+      <Filter>eVision Files</Filter>
+    </ClCompile>
+    <ClCompile Include="eVision\EvsMatch.cpp">
+      <Filter>eVision Files</Filter>
+    </ClCompile>
+    <ClCompile Include="eVision\EvsRoiBW8.cpp">
+      <Filter>eVision Files</Filter>
+    </ClCompile>
+    <ClCompile Include="eVision\EvsRoiC24.cpp">
+      <Filter>eVision Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MiM\MimAPI.cpp">
+      <Filter>iVision Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MiM\MimImageBW8.cpp">
+      <Filter>iVision Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MiM\MimImageC24.cpp">
+      <Filter>iVision Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MiM\MimMatch.cpp">
+      <Filter>iVision Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MiM\MimRoiBW8.cpp">
+      <Filter>iVision Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MiM\MimRoiC24.cpp">
+      <Filter>iVision Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Barcode Device\Barcode_Basic.cpp">
+      <Filter>Barcode Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Barcode Device\Barcode_DataLogic_Matrix210.cpp">
+      <Filter>Barcode Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Barcode Device\Barcode_Handheld.cpp">
+      <Filter>Barcode Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Barcode Device\Barcode_Honeywell_3310GHD.cpp">
+      <Filter>Barcode Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera Device\Camera_Basic.cpp">
+      <Filter>Camera Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera Device\Camera_CoaxLink_Q_12A180F.cpp">
+      <Filter>Camera Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera Device\Camera_GrabLinkFull_CSC6M100BMP11.cpp">
+      <Filter>Camera Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera Device\Camera_GrabLinkFull_Q12A65Fm.cpp">
+      <Filter>Camera Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera Device\CameraCtrl.cpp">
+      <Filter>Camera Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Motion Device\Motion_Basic.cpp">
+      <Filter>Motion Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Motion Device\Motion_Lib_Module.cpp">
+      <Filter>Motion Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Motion Device\Motion_PCE_M114GL.cpp">
+      <Filter>Motion Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Motion Device\Motion_PCI_M114GL.cpp">
+      <Filter>Motion Device</Filter>
+    </ClCompile>
+    <ClCompile Include="AOI_Kernel\AOIBarcode.cpp">
+      <Filter>AOIObj Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AOI_Kernel\AOIBoard.cpp">
+      <Filter>AOIObj Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AOI_Kernel\AOIBox.cpp">
+      <Filter>AOIObj Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AOI_Kernel\AOIComponent.cpp">
+      <Filter>AOIObj Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AOI_Kernel\AOIFd.cpp">
+      <Filter>AOIObj Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AOI_Kernel\AOIField.cpp">
+      <Filter>AOIObj Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AOI_Kernel\AOIFov.cpp">
+      <Filter>AOIObj Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AOI_Kernel\AOIFovMark.cpp">
+      <Filter>AOIObj Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AOI_Kernel\AOIFrame.cpp">
+      <Filter>AOIObj Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AOI_Kernel\AOILand.cpp">
+      <Filter>AOIObj Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AOI_Kernel\AOILogic.cpp">
+      <Filter>AOIObj Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AOI_Kernel\AOIModel.cpp">
+      <Filter>AOIObj Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AOI_Kernel\AOIObj.cpp">
+      <Filter>AOIObj Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AOI_Kernel\AOIObjManager.cpp">
+      <Filter>AOIObj Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AOI_Kernel\AOIPanel.cpp">
+      <Filter>AOIObj Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AOI_Kernel\AOIProject.cpp">
+      <Filter>AOIObj Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AOI_Kernel\AOIRgn.cpp">
+      <Filter>AOIObj Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AOI_Kernel\AOISlice.cpp">
+      <Filter>AOIObj Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AOI_Kernel\AOIWindow.cpp">
+      <Filter>AOIObj Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AOI_Kernel\AOIWnd.cpp">
+      <Filter>AOIObj Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AOI_Kernel\AOIWndRoi.cpp">
+      <Filter>AOIObj Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AOI_Kernel\AlgParam.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AOI_Kernel\ColorGroup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AOI_Kernel\ColorRGBV.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ComponentListWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadCadxyWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectCompareWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorGroupSet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Barcode Device\Barcode_Device_Module.cpp">
+      <Filter>Barcode Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Barcode Device\BarcodeUnit.cpp">
+      <Filter>Barcode Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Barcode Device\DataLogic_1000.cpp">
+      <Filter>Barcode Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Barcode Device\DataLogic_GFS4400.cpp">
+      <Filter>Barcode Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Barcode Device\DataLogic_Matrix200.cpp">
+      <Filter>Barcode Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Barcode Device\DataLogic_Matrix210.cpp">
+      <Filter>Barcode Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Barcode Device\Honeywell_1900.cpp">
+      <Filter>Barcode Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Barcode Device\Honeywell_3310GHD.cpp">
+      <Filter>Barcode Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Barcode Device\MicroScan_Mini.cpp">
+      <Filter>Barcode Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Barcode Device\MicroScan_Mini3.cpp">
+      <Filter>Barcode Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Barcode Device\MicroScan_MiniHawk.cpp">
+      <Filter>Barcode Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Barcode Device\MicroScan_MS3.cpp">
+      <Filter>Barcode Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Barcode Device\MicroScan_Velocity.cpp">
+      <Filter>Barcode Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Barcode Device\BarCode_CS.cpp">
+      <Filter>Barcode Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Barcode Device\Serial.cpp">
+      <Filter>Barcode Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera Device\Camera_DynamicModule.cpp">
+      <Filter>Camera Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera Device\Camera2DUnit.cpp">
+      <Filter>Camera Device</Filter>
+    </ClCompile>
+    <ClCompile Include="AlgImageCompareWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectParamPaneSpecTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemAdvancePane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FdConfirmWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CaliPaneStage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectParamPaneBarcode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectParamPaneSave.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelUpdateToGroupWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AlgPatternListWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SpaceBaseParamWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="JET8000.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AOIDataCollect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BlobAnalysis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DIB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Draw3DWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditFormView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageDebugWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InputBoxWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JET8000.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JET8000MSGDef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JetAPIUtility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JetBlob.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JetLoadDll.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JetMemDC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JetMemory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JetSerial.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MotionCtrlWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MotionParamPane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MotionStatusPane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewProjectFiducialPane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewProjectIntrodPane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewProjectLoadCadxyPane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewProjectLoadLibraryPane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewProjectPanelAlignPane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewProjectRegionImagePane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewProjectWizardWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlcCtrlWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlcLaneAdjustPane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlcLaneStatusPane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlcNodeListPane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlcTowerLightPane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectParamBasicPane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectParamWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemConfigWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemParamPane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CudaFunc.h">
+      <Filter>Cuda Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CudaKernel.h">
+      <Filter>Cuda Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AOISystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JetAOI3DDefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemInitialWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraCtrlWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RS232.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugFormView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ParamUni.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CalibrationDef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CalibrationWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CaliPaneAlign.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CaliPaneTargetSetting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImagePhaseWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="3DUnWrapping.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AOIFileIO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TreeCtrlComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MapCoordinate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JETMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Jpegfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JetFieldDivider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageMaskWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImagePhaseAllWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JetZip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CudaCtrlWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageConfigWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JetUSBCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LightCtrlBoard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LightCtrlBoardWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RulerWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SortObj.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorRGBVWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertiesWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JETPropertyGridCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PageDialogbarPartNumber.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PageSplitterWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PaneTabCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TreeCtrlDef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectMapPane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditProjectMapDockPane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditModelView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditWndDockPane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelAddAllWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditImageDockPane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditImageView3DPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LogManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LogNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditMainView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditImageBinaryWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditImageColorFilterWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditImageProcessPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DefectListWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JetMatch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditImagePatternWnd.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditResultDockPane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JETListCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JETTreeCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JetImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DtkBarcode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JetBarcode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditFdView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditBarcodeView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OnlineFormView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectRegionMapWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemBasicPane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemFolderPane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemColorPane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectParamPaneAlarm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AOIDataDefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditComponentListDockPane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditPartNumberListDockPane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditModelListDockPane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditLibraryDockPane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditLibraryWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectParameterDef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemParameterDef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Light3DTiDLP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Light3DTiDLPWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Light3DTiFrmw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Light3DTiUsb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Light3DCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Light3DDef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WndAlgPropertyDef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditImageView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditWndView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BarcodeConfirmWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectMapWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayPasteWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AOIFileSpcDef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectListWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectMarkWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UserRegisterWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UserLevelWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Plc_Basic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Plc_Vigor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AlgBlobCountWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AlgCharVerifyWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AlgBinaryParam.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PatternParam.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BarcodeDeviceWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BarcodeInputWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectColorWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InputComboxWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Light3DTiDLP_v3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Light3DTiFrmw_v3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Light3DTiUsb_v3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SpaceNoiseFilterParamWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditModelListPaneBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditPartNumberListPaneBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditResultPaneBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectMapMaskWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectLibraryWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewPanelWizardWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditImageBlobWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JETMFCListCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="eVision\EVisionLibDef.h">
+      <Filter>eVision Files</Filter>
+    </ClInclude>
+    <ClInclude Include="eVision\EvsAPI.h">
+      <Filter>eVision Files</Filter>
+    </ClInclude>
+    <ClInclude Include="eVision\EvsBarcode1D.h">
+      <Filter>eVision Files</Filter>
+    </ClInclude>
+    <ClInclude Include="eVision\EvsBarcodeDataMatrix.h">
+      <Filter>eVision Files</Filter>
+    </ClInclude>
+    <ClInclude Include="eVision\EvsImageBW8.h">
+      <Filter>eVision Files</Filter>
+    </ClInclude>
+    <ClInclude Include="eVision\EvsImageC24.h">
+      <Filter>eVision Files</Filter>
+    </ClInclude>
+    <ClInclude Include="eVision\EvsMatch.h">
+      <Filter>eVision Files</Filter>
+    </ClInclude>
+    <ClInclude Include="eVision\EvsRoiBW8.h">
+      <Filter>eVision Files</Filter>
+    </ClInclude>
+    <ClInclude Include="eVision\EvsRoiC24.h">
+      <Filter>eVision Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MiM\MimAPI.h">
+      <Filter>iVision Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MiM\MimImageBW8.h">
+      <Filter>iVision Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MiM\MimImageC24.h">
+      <Filter>iVision Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MiM\MimLibDef.h">
+      <Filter>iVision Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MiM\MimMatch.h">
+      <Filter>iVision Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MiM\MimRoiBW8.h">
+      <Filter>iVision Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MiM\MimRoiC24.h">
+      <Filter>iVision Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Barcode Device\Barcode_Basic.h">
+      <Filter>Barcode Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Barcode Device\Barcode_DataLogic_Matrix210.h">
+      <Filter>Barcode Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Barcode Device\Barcode_Define.h">
+      <Filter>Barcode Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Barcode Device\Barcode_Device.h">
+      <Filter>Barcode Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Barcode Device\Barcode_Handheld.h">
+      <Filter>Barcode Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Barcode Device\Barcode_Honeywell_3310GHD.h">
+      <Filter>Barcode Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera Device\Camera_Basic.h">
+      <Filter>Camera Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera Device\Camera_CoaxLink_Q_12A180F.h">
+      <Filter>Camera Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera Device\Camera_Define.h">
+      <Filter>Camera Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera Device\Camera_GrabLinkFull_CSC6M100BMP11.h">
+      <Filter>Camera Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera Device\Camera_GrabLinkFull_Q12A65Fm.h">
+      <Filter>Camera Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera Device\CameraCtrl.h">
+      <Filter>Camera Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Motion Device\Motion_Basic.h">
+      <Filter>Motion Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Motion Device\Motion_Define.h">
+      <Filter>Motion Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Motion Device\Motion_Lib_Module.h">
+      <Filter>Motion Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Motion Device\Motion_PCE_M114GL.h">
+      <Filter>Motion Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Motion Device\Motion_PCI_M114GL.h">
+      <Filter>Motion Device</Filter>
+    </ClInclude>
+    <ClInclude Include="AOI_Kernel\AOIBarcode.h">
+      <Filter>AOIObj Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AOI_Kernel\AOIBoard.h">
+      <Filter>AOIObj Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AOI_Kernel\AOIBox.h">
+      <Filter>AOIObj Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AOI_Kernel\AOIComponent.h">
+      <Filter>AOIObj Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AOI_Kernel\AOIFd.h">
+      <Filter>AOIObj Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AOI_Kernel\AOIField.h">
+      <Filter>AOIObj Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AOI_Kernel\AOIFov.h">
+      <Filter>AOIObj Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AOI_Kernel\AOIFovMark.h">
+      <Filter>AOIObj Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AOI_Kernel\AOIFrame.h">
+      <Filter>AOIObj Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AOI_Kernel\AOILand.h">
+      <Filter>AOIObj Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AOI_Kernel\AOILogic.h">
+      <Filter>AOIObj Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AOI_Kernel\AOIModel.h">
+      <Filter>AOIObj Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AOI_Kernel\AOIModelDef.h">
+      <Filter>AOIObj Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AOI_Kernel\AOIObj.h">
+      <Filter>AOIObj Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AOI_Kernel\AOIObjManager.h">
+      <Filter>AOIObj Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AOI_Kernel\AOIPanel.h">
+      <Filter>AOIObj Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AOI_Kernel\AOIProject.h">
+      <Filter>AOIObj Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AOI_Kernel\AOIRgn.h">
+      <Filter>AOIObj Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AOI_Kernel\AOISlice.h">
+      <Filter>AOIObj Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AOI_Kernel\AOIWindow.h">
+      <Filter>AOIObj Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AOI_Kernel\AOIWnd.h">
+      <Filter>AOIObj Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AOI_Kernel\AOIWndRoi.h">
+      <Filter>AOIObj Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AOI_Kernel\AlgParam.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AOI_Kernel\AlgParamDef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AOI_Kernel\ColorGroup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AOI_Kernel\ColorRGBV.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ComponentListWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadCadxyWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectCompareWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorGroupSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Barcode Device\Barcode_Device_Module.h">
+      <Filter>Barcode Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Barcode Device\BarcodeUnit.h">
+      <Filter>Barcode Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera Device\Camera_DynamicModule.h">
+      <Filter>Camera Device</Filter>
+    </ClInclude>
+    <ClInclude Include="AlgImageCompareWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectParamPaneSpecTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemAdvancePane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FdConfirmWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CaliPaneStage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectParamPaneBarcode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectParamPaneSave.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelUpdateToGroupWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AlgPatternListWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SpaceBaseParamWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\icon1.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\JET8000.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\JET8000.rc2">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\LED_Blue_Large.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\LED_Blue_Media.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\LED_Gray_Large.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\LED_Gray_Median.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\LED_Gray_Small.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\LED_Green_Large.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\LED_Green_Median.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\LED_Green_Small.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\LED_Red_Large.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\LED_Red_Median.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\LED_Red_Small.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\LED_Yellow_Large.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\LED_Yellow_Median.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\MainDoc.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="JET8000.reg" />
+    <CustomBuild Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="CudaKernel.cu">
+      <Filter>Cuda Files</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\ribbon1.mfcribbon-ms" />
+    <None Include="res\Main.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\RibbonGlobalImage.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bitmap2.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Empty_IconM.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Empty_IconS.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Model_Icon_Empty_M.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Model_Icon_Empty_S.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconBGA_M.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconBGA_S.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconCAE_M.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconCAE_S.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconChipC_M.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconChipC_S.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconChipL_M.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconChipL_S.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconChipI_M.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconChipI_S.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconChipR_M.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconChipR_S.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconCON_M.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconCON_S.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconDIP_M.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconDIP_S.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconMELF_M.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconMELF_S.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconQFN_M.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconQFN_S.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconQFP_M.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconQFP_S.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconRN_M.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconRN_S.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconCN_M.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconCN_S.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconSOJ_M.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconSOJ_S.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconSOTA_M.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconSOT_M.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconSOT_S.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconSOT_Power_M.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconSOT_Power_S.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconTANT_M.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconTANT_S.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconSOP_M.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconSOP_S.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconEmpty_M.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconEmpty_S.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconChipLED_M.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconChipLED_S.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconLEDN_M.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconLEDN_S.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconIC_M.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconIC_S.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconPadComponent_M.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconPadComponent_S.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconGoldenFinger_M.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconGoldenFinger_S.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconOthers_M.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconOthers_S.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconDFN_S.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconDFN_M.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconPLCC_S.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconPLCC_M.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconNoLead_M.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\modelicon\bitmap6.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconNoLead_S.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconLead_M.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelIcon\ModelIconLead_S.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ProjectTreeIcon.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\PropertyBtn.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\RibbonSmallImage.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\modelicon\bitmap2.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\RibbonIconLarge.BMP">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\RibbonIconSmall.BMP">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Main_Offline.BMP">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,1719 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_Unicode|Win32">
+      <Configuration>Debug_Unicode</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Unicode|x64">
+      <Configuration>Debug_Unicode</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Release|Win32">
+      <Configuration>Debug_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Release|x64">
+      <Configuration>Debug_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Unicode|Win32">
+      <Configuration>Release_Unicode</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Unicode|x64">
+      <Configuration>Release_Unicode</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{DF83FF67-B1C3-00F1-E37C-C0EC9A6DA3A2}</ProjectGuid>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 9.1.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\JET8000_Library\Runtime_x32\</OutDir>
+    <IntDir>x32\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>JET8000(x32d)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\JET8000_Library\Runtime_x64\</OutDir>
+    <IntDir>x64\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>JET8000(x64d)</TargetName>
+    <IncludePath>$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\JET8000_Library\Runtime_x32\</OutDir>
+    <IntDir>x32\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>JET8000(x32)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\JET8000_Library\Runtime_x64\</OutDir>
+    <IntDir>x64\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>JET8000(x64)</TargetName>
+    <IncludePath>$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">
+    <OutDir>..\JET8000_Library\Runtime_x32\</OutDir>
+    <IntDir>x32\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>JET8000(x32d)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|x64'">
+    <OutDir>..\JET8000_Library\Runtime_x64\</OutDir>
+    <IntDir>x64\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>JET8000(x64d)</TargetName>
+    <IncludePath>$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">
+    <OutDir>..\JET8000_Library\Runtime_x32\</OutDir>
+    <IntDir>x32\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>JET8000(x32)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Release|Win32'">
+    <OutDir>..\JET8000_Library\Runtime_x32\</OutDir>
+    <IntDir>x32\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>JET8000(x32)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|x64'">
+    <OutDir>..\JET8000_Library\Runtime_x64\</OutDir>
+    <IntDir>x64\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>JET8000(x64)</TargetName>
+    <IncludePath>$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Release|x64'">
+    <OutDir>..\JET8000_Library\Runtime_x64\</OutDir>
+    <IntDir>x64\Release\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>JET8000(x64R)</TargetName>
+    <IncludePath>$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\x32\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\x32\Debug\JET8000.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\x32\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\x32\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <AdditionalOptions>/Zm200 /MP %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>./;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\x32\Debug\JET8000.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0404</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\x32\Debug\JET8000.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>..\JET8000_Library\Runtime_x32\JET8000(x32d).exe</OutputFile>
+      <AdditionalDependencies>nafxcwd.lib</AdditionalDependencies>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+    <CudaCompile>
+      <Runtime>MTd</Runtime>
+      <MaxRegCount>32768</MaxRegCount>
+      <PtxAsOptionV>true</PtxAsOptionV>
+      <GPUDebugInfo>false</GPUDebugInfo>
+      <HostDebugInfo>false</HostDebugInfo>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\x64\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\x64\Debug\JET8000.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\x64\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\x64\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <AdditionalOptions>/Zm512 /MP /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.\AOI_Kernel;.\Motion Device;.\Barcode Device;.\Camera Device;.\Mim;.\eVision;.\Socket;.\RabbitMQ;.\RabbitMQ\rabbitmq_src;.\RabbitMQ\rabbitmq_str\amqpcpp;./;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\x32\Debug\JET8000.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0404</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\x64\Debug\JET8000.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>..\JET8000_Library\Runtime_x64\JET8000(x64d).exe</OutputFile>
+      <AdditionalDependencies>nafxcwd.lib</AdditionalDependencies>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+    <CudaCompile>
+      <Runtime>InheritFromHost</Runtime>
+      <MaxRegCount>32768</MaxRegCount>
+      <PtxAsOptionV>true</PtxAsOptionV>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <GPUDebugInfo>true</GPUDebugInfo>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\x32\Release\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\x32\Release\JET8000.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\x32\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\x32\Release\</ProgramDataBaseFileName>
+      <AdditionalOptions>/Zm200 /MP %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>./;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\x32\Release\JET8000.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0404</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\x32\Release\JET8000.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>..\JET8000_Library\Runtime_x32\JET8000(x32).exe</OutputFile>
+      <AdditionalDependencies>nafxcw.lib</AdditionalDependencies>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+    <CudaCompile>
+      <Runtime>MT</Runtime>
+      <MaxRegCount>0</MaxRegCount>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\x64\Release\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\x64\Release\JET8000.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\x64\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\x64\Release\</ProgramDataBaseFileName>
+      <AdditionalOptions>/Zm512 /MP /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.\AOI_Kernel;.\Motion Device;.\Barcode Device;.\Camera Device;.\Mim;.\eVision;.\RabbitMQ;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\x32\Release\JET8000.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0404</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\x64\Release\JET8000.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>..\JET8000_Library\Runtime_x64\JET8000(x64).exe</OutputFile>
+      <AdditionalDependencies>nafxcw.lib</AdditionalDependencies>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+    <CudaCompile>
+      <Runtime>MT</Runtime>
+      <MaxRegCount>0</MaxRegCount>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <HostDebugInfo>false</HostDebugInfo>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\x32\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\x32\Debug\JET8000.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\x32\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\x32\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <AdditionalOptions>/Zm200 /MP %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>./;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\x32\Debug\JET8000.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0404</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\x32\Debug\JET8000.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>..\JET8000_Library\Runtime_x32\JET8000(x32d).exe</OutputFile>
+      <EntryPointSymbol>wWinMainCRTStartup</EntryPointSymbol>
+      <AdditionalDependencies>uafxcwd.lib</AdditionalDependencies>
+      <LargeAddressAware>true</LargeAddressAware>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+    <CudaCompile>
+      <Runtime>MTd</Runtime>
+      <MaxRegCount>32768</MaxRegCount>
+      <PtxAsOptionV>true</PtxAsOptionV>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\x64\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\x64\Debug\JET8000.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\x64\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\x64\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <AdditionalOptions>/Zm512 /MP /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.\Light3DCtrl;.\LightCtrlBoard;.\AOI_Kernel;.\Motion Device;.\Barcode Device;.\Camera Device;.\Mim;.\eVision;.\Socket;.\RabbitMQ;.\RabbitMQ\rabbitmq_src;.\RabbitMQ\rabbitmq_str\amqpcpp;./</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\x32\Debug\JET8000.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0404</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(IntermediateOutputPath)$(TargetName).bsc</OutputFile>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>..\JET8000_Library\Runtime_x64\JET8000(x64d).exe</OutputFile>
+      <AdditionalDependencies>uafxcwd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <LargeAddressAware>true</LargeAddressAware>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+    <CudaCompile>
+      <Runtime>InheritFromHost</Runtime>
+      <PtxAsOptionV>false</PtxAsOptionV>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <UseHostDefines>false</UseHostDefines>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\x32\Release\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\x32\Release\JET8000.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\x32\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\x32\Release\</ProgramDataBaseFileName>
+      <AdditionalOptions>/Zm200 /MP %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>./;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\x32\Release\JET8000.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0404</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\x32\Release\JET8000.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>..\JET8000_Library\Runtime_x32\JET8000(x32).exe</OutputFile>
+      <EntryPointSymbol>wWinMainCRTStartup</EntryPointSymbol>
+      <AdditionalDependencies>uafxcw.lib</AdditionalDependencies>
+      <LargeAddressAware>true</LargeAddressAware>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+    <CudaCompile>
+      <Runtime>MT</Runtime>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\x32\Release\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\x32\Release\JET8000.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\x32\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\x32\Release\</ProgramDataBaseFileName>
+      <AdditionalOptions>/Zm200 /MP %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>./;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\x32\Release\JET8000.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0404</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\x32\Release\JET8000.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>..\JET8000_Library\Runtime_x32\JET8000(x32).exe</OutputFile>
+      <EntryPointSymbol>wWinMainCRTStartup</EntryPointSymbol>
+      <AdditionalDependencies>uafxcw.lib</AdditionalDependencies>
+      <LargeAddressAware>true</LargeAddressAware>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+    <CudaCompile>
+      <Runtime>MT</Runtime>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\x64\Release\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\x64\Release\JET8000.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\x64\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\x64\Release\</ProgramDataBaseFileName>
+      <AdditionalOptions>/Zm512 /MP /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.\Light3DCtrl;.\LightCtrlBoard;.\AOI_Kernel;.\Motion Device;.\Barcode Device;.\Camera Device;.\Mim;.\eVision;.\Socket;.\RabbitMQ;.\RabbitMQ\rabbitmq_src;.\RabbitMQ\rabbitmq_str\amqpcpp;./;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\x32\Release\JET8000.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0404</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <OutputFile>$(IntermediateOutputPath)$(TargetName).bsc</OutputFile>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>..\JET8000_Library\Runtime_x64\JET8000(x64).exe</OutputFile>
+      <AdditionalDependencies>uafxcw.lib</AdditionalDependencies>
+      <LargeAddressAware>true</LargeAddressAware>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+    <CudaCompile>
+      <Runtime>InheritFromHost</Runtime>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <HostDebugInfo>false</HostDebugInfo>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Release|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\x64\Release\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\x64\Release\JET8000.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\x64\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\x64\Release\</ProgramDataBaseFileName>
+      <AdditionalOptions>/Zm512 /MP /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.\Light3DCtrl;.\LightCtrlBoard;.\AOI_Kernel;.\Motion Device;.\Barcode Device;.\Camera Device;.\Mim;.\eVision;.\Socket;.\RabbitMQ;.\RabbitMQ\rabbitmq_src;.\RabbitMQ\rabbitmq_str\amqpcpp;./;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\x32\Release\JET8000.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0404</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <OutputFile>$(IntermediateOutputPath)$(TargetName).bsc</OutputFile>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>..\JET8000_Library\Runtime_x64\JET8000(x64R).exe</OutputFile>
+      <AdditionalDependencies>uafxcw.lib</AdditionalDependencies>
+      <LargeAddressAware>true</LargeAddressAware>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+    <CudaCompile>
+      <Runtime>InheritFromHost</Runtime>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="3DUnWrapping.cpp" />
+    <ClCompile Include="AlgBarcodeRecognizeWnd.cpp" />
+    <ClCompile Include="AlgBinaryParam.cpp" />
+    <ClCompile Include="AlgBlobCountWnd.cpp" />
+    <ClCompile Include="AlgCharVerifyWnd.cpp" />
+    <ClCompile Include="AlgImageCompareWnd.cpp" />
+    <ClCompile Include="AlgImageEdgeEnhanceWnd.cpp" />
+    <ClCompile Include="AlgImageSourceWnd.cpp" />
+    <ClCompile Include="AlgInspectionMeasureConnector.cpp" />
+    <ClCompile Include="AlgParam_Height.cpp" />
+    <ClCompile Include="AlgParam_MeasureConnector.cpp" />
+    <ClCompile Include="AlgPatternEditWnd.cpp" />
+    <ClCompile Include="AlgPatternListWnd.cpp" />
+    <ClCompile Include="AlgPatternTextWnd.cpp" />
+    <ClCompile Include="AlgSolderWettingWnd.cpp" />
+    <ClCompile Include="AOIDataCollect.cpp" />
+    <ClCompile Include="AOIDataCollect_Log.cpp" />
+    <ClCompile Include="AOIDataCollect_M2M.cpp" />
+    <ClCompile Include="AOIDataCollect_OnlineProc.cpp" />
+    <ClCompile Include="AOIDataCollect_Param.cpp" />
+    <ClCompile Include="AOIDataCollect_Thread.cpp" />
+    <ClCompile Include="AOIDataDefine.cpp" />
+    <ClCompile Include="AOIExceptionCodeCtrl.cpp" />
+    <ClCompile Include="AOIFileIO.cpp" />
+    <ClCompile Include="AOISystem.cpp" />
+    <ClCompile Include="AOITreeNode.cpp" />
+    <ClCompile Include="AOI_Kernel\AlgParam.cpp" />
+    <ClCompile Include="AOI_Kernel\AlgParam_AiModel.cpp" />
+    <ClCompile Include="AOI_Kernel\AlgParam_AngleMeasure.cpp" />
+    <ClCompile Include="AOI_Kernel\AlgParam_BarcodeRecognize.cpp" />
+    <ClCompile Include="AOI_Kernel\AlgParam_BlobCount.cpp" />
+    <ClCompile Include="AOI_Kernel\AlgParam_BodyTilt.cpp" />
+    <ClCompile Include="AOI_Kernel\AlgParam_BrightRatio.cpp" />
+    <ClCompile Include="AOI_Kernel\AlgParam_CharVerify.cpp" />
+    <ClCompile Include="AOI_Kernel\AlgParam_ColorCode.cpp" />
+    <ClCompile Include="AOI_Kernel\AlgParam_EdgeSearch.cpp" />
+    <ClCompile Include="AOI_Kernel\AlgParam_FdMatch.cpp" />
+    <ClCompile Include="AOI_Kernel\AlgParam_GroupCompare.cpp" />
+    <ClCompile Include="AOI_Kernel\AlgParam_ImageMatch.cpp" />
+    <ClCompile Include="AOI_Kernel\AlgParam_IPC.cpp" />
+    <ClCompile Include="AOI_Kernel\AlgParam_MeasureBlackGlue.cpp" />
+    <ClCompile Include="AOI_Kernel\AlgParam_MeasureCpuPin.cpp" />
+    <ClCompile Include="AOI_Kernel\AlgParam_MeasureFluxArea.cpp" />
+    <ClCompile Include="AOI_Kernel\AlgParam_MeasureSIP.cpp" />
+    <ClCompile Include="AOI_Kernel\AlgParam_ModelMatch.cpp" />
+    <ClCompile Include="AOI_Kernel\AlgParam_ObjectMeasure.cpp" />
+    <ClCompile Include="AOI_Kernel\AlgParam_OuterShort.cpp" />
+    <ClCompile Include="AOI_Kernel\AlgParam_PatternMatch.cpp" />
+    <ClCompile Include="AOI_Kernel\AlgParam_PixelCompare.cpp" />
+    <ClCompile Include="AOI_Kernel\AlgParam_ShapeVerify.cpp" />
+    <ClCompile Include="AOI_Kernel\AlgParam_SolderWetting.cpp" />
+    <ClCompile Include="AOI_Kernel\AOIBarcode.cpp" />
+    <ClCompile Include="AOI_Kernel\AOIBoard.cpp" />
+    <ClCompile Include="AOI_Kernel\AOIBox.cpp" />
+    <ClCompile Include="AOI_Kernel\AOIComponent.cpp" />
+    <ClCompile Include="AOI_Kernel\AOIFd.cpp" />
+    <ClCompile Include="AOI_Kernel\AOIField.cpp" />
+    <ClCompile Include="AOI_Kernel\AOIFov.cpp" />
+    <ClCompile Include="AOI_Kernel\AOIFovMark.cpp" />
+    <ClCompile Include="AOI_Kernel\AOIFrame.cpp" />
+    <ClCompile Include="AOI_Kernel\AOILand.cpp" />
+    <ClCompile Include="AOI_Kernel\AOILogic.cpp" />
+    <ClCompile Include="AOI_Kernel\AOIMark.cpp" />
+    <ClCompile Include="AOI_Kernel\AOIModel.cpp" />
+    <ClCompile Include="AOI_Kernel\AOIModelDefaultWnd_v2.cpp" />
+    <ClCompile Include="AOI_Kernel\AOIModel_Land.cpp" />
+    <ClCompile Include="AOI_Kernel\AOIModel_Wnd.cpp" />
+    <ClCompile Include="AOI_Kernel\AOIObj.cpp" />
+    <ClCompile Include="AOI_Kernel\AOIObjManager.cpp" />
+    <ClCompile Include="AOI_Kernel\AOIPanel.cpp" />
+    <ClCompile Include="AOI_Kernel\AOIPartGroup.cpp" />
+    <ClCompile Include="AOI_Kernel\AOIProject.cpp" />
+    <ClCompile Include="AOI_Kernel\AOIProject_Barcode.cpp" />
+    <ClCompile Include="AOI_Kernel\AOIProject_Board.cpp" />
+    <ClCompile Include="AOI_Kernel\AOIProject_Component.cpp" />
+    <ClCompile Include="AOI_Kernel\AOIProject_Fd.cpp" />
+    <ClCompile Include="AOI_Kernel\AOIProject_Field.cpp" />
+    <ClCompile Include="AOI_Kernel\AOIProject_Mark.cpp" />
+    <ClCompile Include="AOI_Kernel\AOIProject_Model.cpp" />
+    <ClCompile Include="AOI_Kernel\AOIProject_Panel.cpp" />
+    <ClCompile Include="AOI_Kernel\AOIProject_PartGroup.cpp" />
+    <ClCompile Include="AOI_Kernel\AOIRgn.cpp" />
+    <ClCompile Include="AOI_Kernel\AOISlice.cpp" />
+    <ClCompile Include="AOI_Kernel\AOIWindow.cpp" />
+    <ClCompile Include="AOI_Kernel\AOIWnd.cpp" />
+    <ClCompile Include="AOI_Kernel\AOIWndMask.cpp" />
+    <ClCompile Include="AOI_Kernel\AOIWndRoi.cpp" />
+    <ClCompile Include="AOI_Kernel\ColorGroup.cpp" />
+    <ClCompile Include="AOI_Kernel\ColorRGBV.cpp" />
+    <ClCompile Include="ArrayPasteWnd.cpp" />
+    <ClCompile Include="AutoAddComponentWnd.cpp" />
+    <ClCompile Include="Barcode Device\Barcode_Azurewave.cpp" />
+    <ClCompile Include="Barcode Device\Barcode_Basic.cpp" />
+    <ClCompile Include="Barcode Device\Barcode_DataLogic_Matrix210.cpp" />
+    <ClCompile Include="Barcode Device\Barcode_DataLogic_Matrix210N.cpp" />
+    <ClCompile Include="Barcode Device\Barcode_General.cpp" />
+    <ClCompile Include="Barcode Device\Barcode_Handheld.cpp" />
+    <ClCompile Include="Barcode Device\Barcode_Honeywell_3310GHD.cpp" />
+    <ClCompile Include="Barcode Device\Barcode_Keyence_SR2000.cpp" />
+    <ClCompile Include="Barcode Device\Barcode_Keyence_SR751.cpp" />
+    <ClCompile Include="BarcodeConfirmWnd.cpp" />
+    <ClCompile Include="BarcodeDeviceWnd.cpp" />
+    <ClCompile Include="BarcodeGeneralWnd.cpp" />
+    <ClCompile Include="BarcodeInputWnd.cpp" />
+    <ClCompile Include="BarcodeListWnd.cpp" />
+    <ClCompile Include="BlobAnalysis.cpp" />
+    <ClCompile Include="BoardConfigWnd.cpp" />
+    <ClCompile Include="BoardListWnd.cpp" />
+    <ClCompile Include="CalibrationWnd.cpp" />
+    <ClCompile Include="CaliPaneAlign.cpp" />
+    <ClCompile Include="CaliPaneDynamic.cpp" />
+    <ClCompile Include="CaliPaneStage.cpp" />
+    <ClCompile Include="CaliPaneTargetSetting.cpp" />
+    <ClCompile Include="CaliWndDynamicTune.cpp" />
+    <ClCompile Include="Camera Device\CameraCtrl.cpp" />
+    <ClCompile Include="Camera Device\Camera_Basic.cpp" />
+    <ClCompile Include="Camera Device\Camera_CoaxLinkQuadCXP12_Camera.cpp" />
+    <ClCompile Include="Camera Device\Camera_CoaxlinkQuadG3_Camera.cpp" />
+    <ClCompile Include="Camera Device\Camera_CoaxLink_Q_12A180F.cpp" />
+    <ClCompile Include="Camera Device\Camera_Coaxlink_VC_12MX_M180.cpp" />
+    <ClCompile Include="Camera Device\Camera_GrabLinkFull_CSC6M100BMP11.cpp" />
+    <ClCompile Include="Camera Device\Camera_GrabLinkFull_Q12A65Fm.cpp" />
+    <ClCompile Include="Camera Device\Camera_MatroxRapixoCXP12_Camera.cpp" />
+    <ClCompile Include="Camera Device\Camera_MatroxRapixoCXP6_Camera.cpp" />
+    <ClCompile Include="Camera Device\Camera_Teli_BU1203MC.cpp" />
+    <ClCompile Include="Camera Device\Camera_Teli_BU1207MCF.cpp" />
+    <ClCompile Include="CameraCtrlWnd.cpp" />
+    <ClCompile Include="ColorGroupSet.cpp" />
+    <ClCompile Include="ColorRGBVWnd.cpp" />
+    <ClCompile Include="ComponentAgentListWnd.cpp" />
+    <ClCompile Include="ComponentConfigWnd.cpp" />
+    <ClCompile Include="ComponentDefectAlarmListWnd.cpp" />
+    <ClCompile Include="ComponentDefectAlarmWnd.cpp" />
+    <ClCompile Include="ComponentListWnd.cpp" />
+    <ClCompile Include="ConnectorPinSettingsWnd.cpp" />
+    <ClCompile Include="CudaCtrlWnd.cpp" />
+    <ClCompile Include="CudaFunc.cpp" />
+    <ClCompile Include="DebugFormView.cpp" />
+    <ClCompile Include="DebugWnd.cpp" />
+    <ClCompile Include="DefectListWnd.cpp" />
+    <ClCompile Include="DialogBase.cpp" />
+    <ClCompile Include="DIB.cpp" />
+    <ClCompile Include="Draw3DWnd.cpp" />
+    <ClCompile Include="DtkBarcode.cpp" />
+    <ClCompile Include="EditBarcodeView.cpp" />
+    <ClCompile Include="EditComponentListDockPane.cpp" />
+    <ClCompile Include="EditFdView.cpp" />
+    <ClCompile Include="EditFormView.cpp" />
+    <ClCompile Include="EditImageBinaryWnd.cpp" />
+    <ClCompile Include="EditImageBlobWnd.cpp" />
+    <ClCompile Include="EditImageColorFilterWnd.cpp" />
+    <ClCompile Include="EditImageDockPane.cpp" />
+    <ClCompile Include="EditImagePatternWnd.cpp" />
+    <ClCompile Include="EditImageProcessPage.cpp" />
+    <ClCompile Include="EditImageView.cpp" />
+    <ClCompile Include="EditImageView3DPage.cpp" />
+    <ClCompile Include="EditLibraryDockPane.cpp" />
+    <ClCompile Include="EditLibraryWnd.cpp" />
+    <ClCompile Include="EditMainView.cpp" />
+    <ClCompile Include="EditMarkView.cpp" />
+    <ClCompile Include="EditModelListDockPane.cpp" />
+    <ClCompile Include="EditModelListPaneBar.cpp" />
+    <ClCompile Include="EditModelView.cpp" />
+    <ClCompile Include="EditPartNumberListDockPane.cpp" />
+    <ClCompile Include="EditPartNumberListPaneBar.cpp" />
+    <ClCompile Include="EditProjectMapDockPane.cpp" />
+    <ClCompile Include="EditResultDockPane.cpp" />
+    <ClCompile Include="EditResultPaneBar.cpp" />
+    <ClCompile Include="EditWndDockPane.cpp" />
+    <ClCompile Include="EditWndView.cpp" />
+    <ClCompile Include="EditWndView_AIModel.cpp" />
+    <ClCompile Include="EditWndView_AngleMeasure.cpp" />
+    <ClCompile Include="EditWndView_BarcodeRecognize.cpp" />
+    <ClCompile Include="EditWndView_BlobCount.cpp" />
+    <ClCompile Include="EditWndView_BodyTilt.cpp" />
+    <ClCompile Include="EditWndView_BrightRatio.cpp" />
+    <ClCompile Include="EditWndView_CharVerify.cpp" />
+    <ClCompile Include="EditWndView_ColorCode.cpp" />
+    <ClCompile Include="EditWndView_EdgeSearch.cpp" />
+    <ClCompile Include="EditWndView_FdMatch.cpp" />
+    <ClCompile Include="EditWndView_GroupCompare.cpp" />
+    <ClCompile Include="EditWndView_ImageMatch.cpp" />
+    <ClCompile Include="EditWndView_MeasureBlackGlue.cpp" />
+    <ClCompile Include="EditWndView_MeasureConnector.cpp" />
+    <ClCompile Include="EditWndView_MeasureCpuPin.cpp" />
+    <ClCompile Include="EditWndView_MeasureFluxArea.cpp" />
+    <ClCompile Include="EditWndView_MeasureSIP.cpp" />
+    <ClCompile Include="EditWndView_ModelMatch.cpp" />
+    <ClCompile Include="EditWndView_ObjectMeasure.cpp" />
+    <ClCompile Include="EditWndView_OuterShort.cpp" />
+    <ClCompile Include="EditWndView_ShapeVerify.cpp" />
+    <ClCompile Include="EditWndView_SolderWetting.cpp" />
+    <ClCompile Include="eVision\EvsAPI.cpp" />
+    <ClCompile Include="eVision\EvsBarcode1D.cpp" />
+    <ClCompile Include="eVision\EvsBarcodeDataMatrix.cpp" />
+    <ClCompile Include="eVision\EvsBarcodeQRCode.cpp" />
+    <ClCompile Include="eVision\EvsImageBW8.cpp" />
+    <ClCompile Include="eVision\EvsImageC24.cpp" />
+    <ClCompile Include="eVision\EvsMatch.cpp" />
+    <ClCompile Include="eVision\EvsRoiBW8.cpp" />
+    <ClCompile Include="eVision\EvsRoiC24.cpp" />
+    <ClCompile Include="FdConfirmWnd.cpp" />
+    <ClCompile Include="FdListWnd.cpp" />
+    <ClCompile Include="FdSortWnd.cpp" />
+    <ClCompile Include="FilenameSyntax.cpp" />
+    <ClCompile Include="FilenameSyntaxWnd.cpp" />
+    <ClCompile Include="FingerprintWnd.cpp" />
+    <ClCompile Include="Fingerprint_AS608.cpp" />
+    <ClCompile Include="Fingerprint_base.cpp" />
+    <ClCompile Include="Fingerprint_PQIFPS_Reader.cpp" />
+    <ClCompile Include="HonBarcode.cpp" />
+    <ClCompile Include="ImageAPI.cpp" />
+    <ClCompile Include="ImageAPI_3D.cpp" />
+    <ClCompile Include="ImageAPI_OpenCV.cpp" />
+    <ClCompile Include="ImageCombineWnd.cpp" />
+    <ClCompile Include="ImageConfigWnd.cpp" />
+    <ClCompile Include="ImageDebugWnd.cpp" />
+    <ClCompile Include="ImageMaskWnd.cpp" />
+    <ClCompile Include="ImagePhaseAllWnd.cpp" />
+    <ClCompile Include="ImagePhaseWnd.cpp" />
+    <ClCompile Include="ImageWnd.cpp" />
+    <ClCompile Include="InputBoxWnd.cpp" />
+    <ClCompile Include="InputComboxWnd.cpp" />
+    <ClCompile Include="InputDateTimeWnd.cpp" />
+    <ClCompile Include="InputListWnd.cpp" />
+    <ClCompile Include="ITSCommWnd.cpp" />
+    <ClCompile Include="JET8000.cpp" />
+    <ClCompile Include="JetAlg\JunAlgorithm\ConfigFile.cpp" />
+    <ClCompile Include="JetAlg\JunAlgorithm\CPUAlignment.cpp" />
+    <ClCompile Include="JetAlg\JunAlgorithm\ImageProcessBaseStruct.cpp" />
+    <ClCompile Include="JetAlg\JunAlgorithm\JET_ImageFunction.cpp" />
+    <ClCompile Include="JetAlg\JunAlgorithm\MeasurementBlackGlue.cpp" />
+    <ClCompile Include="JetAPIUtility.cpp" />
+    <ClCompile Include="JetBarcode.cpp" />
+    <ClCompile Include="JetBlob.cpp" />
+    <ClCompile Include="JetChart\JetChart.cpp" />
+    <ClCompile Include="JetChart\JETChartView.cpp" />
+    <ClCompile Include="JetChart\JetSeries.cpp" />
+    <ClCompile Include="JetFieldDivider.cpp" />
+    <ClCompile Include="JetGroundEquation.cpp" />
+    <ClCompile Include="JetImage.cpp" />
+    <ClCompile Include="JetIniFile.cpp" />
+    <ClCompile Include="JETListCtrl.cpp" />
+    <ClCompile Include="JetMatch.cpp" />
+    <ClCompile Include="JETMatrix.cpp" />
+    <ClCompile Include="JetMemDC.cpp" />
+    <ClCompile Include="JetMemory.cpp" />
+    <ClCompile Include="JETMFCListCtrl.cpp" />
+    <ClCompile Include="JETPropertyGridCtrl.cpp" />
+    <ClCompile Include="JETRibbonPanel.cpp" />
+    <ClCompile Include="JetSerial.cpp" />
+    <ClCompile Include="JETTreeCtrl.cpp" />
+    <ClCompile Include="JetTxtFile.cpp" />
+    <ClCompile Include="JetUSBCtrl.cpp" />
+    <ClCompile Include="JetZip.cpp" />
+    <ClCompile Include="Jpegfile.cpp" />
+    <ClCompile Include="JsonCtrl.cpp" />
+    <ClCompile Include="KNNClassify.cpp" />
+    <ClCompile Include="Light3DCtrl\CypressI2C.cpp" />
+    <ClCompile Include="Light3DCtrl\Light3DCtrl.cpp" />
+    <ClCompile Include="Light3DCtrl\Light3DTiDLP.cpp" />
+    <ClCompile Include="Light3DCtrl\Light3DTiDLP4500.cpp" />
+    <ClCompile Include="Light3DCtrl\Light3DTiDLP4500Frmw.cpp" />
+    <ClCompile Include="Light3DCtrl\Light3DTiDLP4500Usb.cpp" />
+    <ClCompile Include="Light3DCtrl\Light3DTiDLP4710.cpp" />
+    <ClCompile Include="Light3DCtrl\Light3DTiDLP4710Fn.cpp" />
+    <ClCompile Include="Light3DCtrl\Light3DTiDLP4710Ti.cpp" />
+    <ClCompile Include="Light3DCtrl\Light3DTiDLP_Imp.cpp" />
+    <ClCompile Include="Light3DCtrl\Light3DTiDLP_Imp_4500.cpp" />
+    <ClCompile Include="Light3DCtrl\Light3DTiDLP_Imp_4500Frmw.cpp" />
+    <ClCompile Include="Light3DCtrl\Light3DTiDLP_Imp_4500Ti.cpp" />
+    <ClCompile Include="Light3DCtrl\Light3DTiDLP_Imp_4500Usb.cpp" />
+    <ClCompile Include="Light3DCtrl\Light3DTiDLP_Imp_4710.cpp" />
+    <ClCompile Include="Light3DCtrl\Light3DTiDLP_Imp_4710Fn.cpp" />
+    <ClCompile Include="Light3DCtrl\Light3DTiDLP_Imp_4710Ti.cpp" />
+    <ClCompile Include="Light3DTiDLPWnd.cpp" />
+    <ClCompile Include="LightCtrlBoardWnd.cpp" />
+    <ClCompile Include="LightCtrlBoard\LightCtrlBoard.cpp" />
+    <ClCompile Include="LightCtrlBoard\LightCtrlBoardImp.cpp" />
+    <ClCompile Include="LightCtrlBoard\LightCtrlBoardImpArduino.cpp" />
+    <ClCompile Include="LightCtrlBoard\LightCtrlBoardImpFpga.cpp" />
+    <ClCompile Include="LoadBomWnd.cpp" />
+    <ClCompile Include="LoadCadxyWnd.cpp" />
+    <ClCompile Include="LogManager.cpp" />
+    <ClCompile Include="LogNode.cpp" />
+    <ClCompile Include="LogOperCtrl.cpp" />
+    <ClCompile Include="LogOperViewerWnd.cpp" />
+    <ClCompile Include="MachineStatusWnd.cpp" />
+    <ClCompile Include="MainDoc.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MapCoordinate.cpp" />
+    <ClCompile Include="MessageBoxWnd.cpp" />
+    <ClCompile Include="MES\ITSFileChecker.cpp" />
+    <ClCompile Include="MES\ITSLinker.cpp" />
+    <ClCompile Include="MES\ITSRabbitMQ.cpp" />
+    <ClCompile Include="MES\MES_Basic.cpp" />
+    <ClCompile Include="MES\MES_Imp.cpp" />
+    <ClCompile Include="MES\MES_IPS.cpp" />
+    <ClCompile Include="MES\MES_ITS.cpp" />
+    <ClCompile Include="MES\MES_MTS.cpp" />
+    <ClCompile Include="MiM\MimAPI.cpp" />
+    <ClCompile Include="MiM\MimImageBW8.cpp" />
+    <ClCompile Include="MiM\MimImageC24.cpp" />
+    <ClCompile Include="MiM\MimMatch.cpp" />
+    <ClCompile Include="MiM\MimRoiBW8.cpp" />
+    <ClCompile Include="MiM\MimRoiC24.cpp" />
+    <ClCompile Include="ModelAddAllWnd.cpp" />
+    <ClCompile Include="ModelGroupWnd.cpp" />
+    <ClCompile Include="ModelPropertyWnd.cpp" />
+    <ClCompile Include="ModelUpdateToGroupWnd.cpp" />
+    <ClCompile Include="ModelWnd.cpp" />
+    <ClCompile Include="Motion Device\MotionAxis.cpp" />
+    <ClCompile Include="Motion Device\MotionNode.cpp" />
+    <ClCompile Include="Motion Device\Motion_Basic.cpp" />
+    <ClCompile Include="Motion Device\Motion_Lib_Module.cpp" />
+    <ClCompile Include="Motion Device\Motion_PCE_M114GL.cpp" />
+    <ClCompile Include="Motion Device\Motion_PCIE_L221_B1D0.cpp" />
+    <ClCompile Include="Motion Device\Motion_PCI_M114GL.cpp" />
+    <ClCompile Include="MotionCtrlWnd.cpp" />
+    <ClCompile Include="MotionModule\Include\MotionUnit.cpp" />
+    <ClCompile Include="MotionParamPane.cpp" />
+    <ClCompile Include="MotionStatusPane.cpp" />
+    <ClCompile Include="NewPanelWizardWnd.cpp" />
+    <ClCompile Include="NewProjectFiducialPane.cpp" />
+    <ClCompile Include="NewProjectIntrodPane.cpp" />
+    <ClCompile Include="NewProjectLoadCadxyPane.cpp" />
+    <ClCompile Include="NewProjectLoadLibraryPane.cpp" />
+    <ClCompile Include="NewProjectPaneDivideDistrict.cpp" />
+    <ClCompile Include="NewProjectPanelAlignPane.cpp" />
+    <ClCompile Include="NewProjectRegionImagePane.cpp" />
+    <ClCompile Include="NewProjectWizardWnd.cpp" />
+    <ClCompile Include="OnlineFormView.cpp" />
+    <ClCompile Include="OnlineFormView_Dual.cpp" />
+    <ClCompile Include="OpenCV_MatAllocator.cpp" />
+    <ClCompile Include="OpenGLWnd.cpp" />
+    <ClCompile Include="PageDialogbarPartNumber.cpp" />
+    <ClCompile Include="PageSplitterWnd.cpp" />
+    <ClCompile Include="PanelListWnd.cpp" />
+    <ClCompile Include="PaneTabCtrl.cpp" />
+    <ClCompile Include="ParamUni.cpp" />
+    <ClCompile Include="PatternParam.cpp" />
+    <ClCompile Include="PlcCtrlWnd.cpp" />
+    <ClCompile Include="PlcLaneAdjustPane.cpp" />
+    <ClCompile Include="PlcLaneStatusPane.cpp" />
+    <ClCompile Include="PlcNodeListPane.cpp" />
+    <ClCompile Include="PlcParamListPane.cpp" />
+    <ClCompile Include="PlcTowerLightPane.cpp" />
+    <ClCompile Include="Plc_Basic.cpp" />
+    <ClCompile Include="Plc_Vigor.cpp" />
+    <ClCompile Include="ProjectCodeListWnd.cpp" />
+    <ClCompile Include="ProjectColorWnd.cpp" />
+    <ClCompile Include="ProjectCompareWnd.cpp" />
+    <ClCompile Include="ProjectDivideDistrictWnd.cpp" />
+    <ClCompile Include="ProjectFieldConfigWnd.cpp" />
+    <ClCompile Include="ProjectGroupConfigWnd.cpp" />
+    <ClCompile Include="ProjectLibraryWnd.cpp" />
+    <ClCompile Include="ProjectListWnd.cpp" />
+    <ClCompile Include="ProjectMapMaskWnd.cpp" />
+    <ClCompile Include="ProjectMapPane.cpp" />
+    <ClCompile Include="ProjectMapSpecRegionWnd.cpp" />
+    <ClCompile Include="ProjectMapWnd.cpp" />
+    <ClCompile Include="ProjectMarkWnd.cpp" />
+    <ClCompile Include="ProjectParamBasicPane.cpp" />
+    <ClCompile Include="ProjectParamPaneAlarm.cpp" />
+    <ClCompile Include="ProjectParamPaneBarcode.cpp" />
+    <ClCompile Include="ProjectParamPaneRepair.cpp" />
+    <ClCompile Include="ProjectParamPaneSave.cpp" />
+    <ClCompile Include="ProjectParamPaneSpecTest.cpp" />
+    <ClCompile Include="ProjectParamPaneVersionCode.cpp" />
+    <ClCompile Include="ProjectParamWnd.cpp" />
+    <ClCompile Include="ProjectRegionMapWnd.cpp" />
+    <ClCompile Include="PropertiesWnd.cpp" />
+    <ClCompile Include="RabbitMQ\JetRabbitmqCtrl.cpp" />
+    <ClCompile Include="RabbitMQ\rabbitmq_src\amqpcpp\array.cpp" />
+    <ClCompile Include="RabbitMQ\rabbitmq_src\amqpcpp\channel.cpp" />
+    <ClCompile Include="RabbitMQ\rabbitmq_src\amqpcpp\channelimpl.cpp" />
+    <ClCompile Include="RabbitMQ\rabbitmq_src\amqpcpp\connectionimpl.cpp" />
+    <ClCompile Include="RabbitMQ\rabbitmq_src\amqpcpp\deferredcancel.cpp" />
+    <ClCompile Include="RabbitMQ\rabbitmq_src\amqpcpp\deferredconfirm.cpp" />
+    <ClCompile Include="RabbitMQ\rabbitmq_src\amqpcpp\deferredconsumer.cpp" />
+    <ClCompile Include="RabbitMQ\rabbitmq_src\amqpcpp\deferredextreceiver.cpp" />
+    <ClCompile Include="RabbitMQ\rabbitmq_src\amqpcpp\deferredget.cpp" />
+    <ClCompile Include="RabbitMQ\rabbitmq_src\amqpcpp\deferredpublisher.cpp" />
+    <ClCompile Include="RabbitMQ\rabbitmq_src\amqpcpp\deferredreceiver.cpp" />
+    <ClCompile Include="RabbitMQ\rabbitmq_src\amqpcpp\field.cpp" />
+    <ClCompile Include="RabbitMQ\rabbitmq_src\amqpcpp\flags.cpp" />
+    <ClCompile Include="RabbitMQ\rabbitmq_src\amqpcpp\receivedframe.cpp" />
+    <ClCompile Include="RabbitMQ\rabbitmq_src\amqpcpp\table.cpp" />
+    <ClCompile Include="RabbitMQ\rabbitmq_src\amqpcpp\watchable.cpp" />
+    <ClCompile Include="RabbitMQ\SimplePocoHandler.cpp" />
+    <ClCompile Include="RemoteParamWnd.cpp" />
+    <ClCompile Include="Rockey4ND\Rockey4ND.cpp" />
+    <ClCompile Include="Rockey4ND\Rockey4ND_JET.cpp" />
+    <ClCompile Include="RS232.CPP" />
+    <ClCompile Include="RulerWnd.cpp" />
+    <ClCompile Include="SmartChartStaticWnd.cpp" />
+    <ClCompile Include="SocketClientWnd.cpp" />
+    <ClCompile Include="Socket\JetSocket.cpp" />
+    <ClCompile Include="Socket\Socket.cpp" />
+    <ClCompile Include="SortObj.cpp" />
+    <ClCompile Include="SpaceBaseParamWnd.cpp" />
+    <ClCompile Include="SpaceNoiseFilterParamWnd.cpp" />
+    <ClCompile Include="SPIComponent.cpp" />
+    <ClCompile Include="SPIPad.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|x64'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug_Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug_Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug_Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|x64'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug_Release|x64'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="SystemAdvancePane.cpp" />
+    <ClCompile Include="SystemAIPane.cpp" />
+    <ClCompile Include="SystemAuthorizationPane.cpp" />
+    <ClCompile Include="SystemBasicPane.cpp" />
+    <ClCompile Include="SystemColorPane.cpp" />
+    <ClCompile Include="SystemConfigWnd.cpp" />
+    <ClCompile Include="SystemConvertWnd.cpp" />
+    <ClCompile Include="SystemDebugPane.cpp" />
+    <ClCompile Include="SystemDefaultPane.cpp" />
+    <ClCompile Include="SystemFolderPane.cpp" />
+    <ClCompile Include="SystemHASIPane.cpp" />
+    <ClCompile Include="SystemInitialWnd.cpp" />
+    <ClCompile Include="SystemLogPane.cpp" />
+    <ClCompile Include="SystemM2MPane.cpp" />
+    <ClCompile Include="SystemMESPane.cpp" />
+    <ClCompile Include="SystemOfflinePane.cpp" />
+    <ClCompile Include="SystemOnlinePane.cpp" />
+    <ClCompile Include="SystemParamPane.cpp" />
+    <ClCompile Include="SystemThreadPane.cpp" />
+    <ClCompile Include="TreeCtrlComponent.cpp" />
+    <ClCompile Include="TreeCtrlDef.cpp" />
+    <ClCompile Include="UserHotKeyCtrl.cpp" />
+    <ClCompile Include="UserHotKeyItem.cpp" />
+    <ClCompile Include="UserLevelWnd.cpp" />
+    <ClCompile Include="UserRegisterWnd.cpp" />
+    <ClCompile Include="WndDefectItem.cpp" />
+    <ClCompile Include="WndDefectItemWnd.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="JET8000.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="3DUnWrapping.h" />
+    <ClInclude Include="AlgBarcodeRecognizeWnd.h" />
+    <ClInclude Include="AlgBinaryParam.h" />
+    <ClInclude Include="AlgBlobCountWnd.h" />
+    <ClInclude Include="AlgCharVerifyWnd.h" />
+    <ClInclude Include="AlgImageCompareWnd.h" />
+    <ClInclude Include="AlgImageEdgeEnhanceWnd.h" />
+    <ClInclude Include="AlgImageSourceWnd.h" />
+    <ClInclude Include="AlgInspectionMeasureConnector.h" />
+    <ClInclude Include="AlgPatternEditWnd.h" />
+    <ClInclude Include="AlgPatternListWnd.h" />
+    <ClInclude Include="AlgPatternTextWnd.h" />
+    <ClInclude Include="AlgSolderWettingWnd.h" />
+    <ClInclude Include="AOIDataCollect.h" />
+    <ClInclude Include="AOIDataDefine.h" />
+    <ClInclude Include="AOIExceptionCodeCtrl.h" />
+    <ClInclude Include="AOIFileIO.h" />
+    <ClInclude Include="AOIFileSpcDef.h" />
+    <ClInclude Include="AOISystem.h" />
+    <ClInclude Include="AOITreeNode.h" />
+    <ClInclude Include="AOI_Kernel\AlgParam.h" />
+    <ClInclude Include="AOI_Kernel\AlgParamDef.h" />
+    <ClInclude Include="AOI_Kernel\AOIBarcode.h" />
+    <ClInclude Include="AOI_Kernel\AOIBoard.h" />
+    <ClInclude Include="AOI_Kernel\AOIBox.h" />
+    <ClInclude Include="AOI_Kernel\AOIComponent.h" />
+    <ClInclude Include="AOI_Kernel\AOIFd.h" />
+    <ClInclude Include="AOI_Kernel\AOIField.h" />
+    <ClInclude Include="AOI_Kernel\AOIFov.h" />
+    <ClInclude Include="AOI_Kernel\AOIFovMark.h" />
+    <ClInclude Include="AOI_Kernel\AOIFrame.h" />
+    <ClInclude Include="AOI_Kernel\AOILand.h" />
+    <ClInclude Include="AOI_Kernel\AOILogic.h" />
+    <ClInclude Include="AOI_Kernel\AOIMark.h" />
+    <ClInclude Include="AOI_Kernel\AOIModel.h" />
+    <ClInclude Include="AOI_Kernel\AOIModelDef.h" />
+    <ClInclude Include="AOI_Kernel\AOIObj.h" />
+    <ClInclude Include="AOI_Kernel\AOIObjManager.h" />
+    <ClInclude Include="AOI_Kernel\AOIPanel.h" />
+    <ClInclude Include="AOI_Kernel\AOIPartGroup.h" />
+    <ClInclude Include="AOI_Kernel\AOIPartGroupDef.h" />
+    <ClInclude Include="AOI_Kernel\AOIProject.h" />
+    <ClInclude Include="AOI_Kernel\AOIRgn.h" />
+    <ClInclude Include="AOI_Kernel\AOISlice.h" />
+    <ClInclude Include="AOI_Kernel\AOIWindow.h" />
+    <ClInclude Include="AOI_Kernel\AOIWnd.h" />
+    <ClInclude Include="AOI_Kernel\AOIWndMask.h" />
+    <ClInclude Include="AOI_Kernel\AOIWndRoi.h" />
+    <ClInclude Include="AOI_Kernel\ColorGroup.h" />
+    <ClInclude Include="AOI_Kernel\ColorRGBV.h" />
+    <ClInclude Include="ArrayPasteWnd.h" />
+    <ClInclude Include="AutoAddComponentWnd.h" />
+    <ClInclude Include="Barcode Device\Barcode_Azurewave.h" />
+    <ClInclude Include="Barcode Device\Barcode_Basic.h" />
+    <ClInclude Include="Barcode Device\Barcode_DataLogic_Matrix210.h" />
+    <ClInclude Include="Barcode Device\Barcode_DataLogic_Matrix210N.h" />
+    <ClInclude Include="Barcode Device\Barcode_Define.h" />
+    <ClInclude Include="Barcode Device\Barcode_Device.h" />
+    <ClInclude Include="Barcode Device\Barcode_General.h" />
+    <ClInclude Include="Barcode Device\Barcode_Handheld.h" />
+    <ClInclude Include="Barcode Device\Barcode_Honeywell_3310GHD.h" />
+    <ClInclude Include="Barcode Device\Barcode_Keyence_SR2000.h" />
+    <ClInclude Include="Barcode Device\Barcode_Keyence_SR751.h" />
+    <ClInclude Include="BarcodeConfirmWnd.h" />
+    <ClInclude Include="BarcodeDeviceWnd.h" />
+    <ClInclude Include="BarcodeGeneralWnd.h" />
+    <ClInclude Include="BarcodeInputWnd.h" />
+    <ClInclude Include="BarcodeListWnd.h" />
+    <ClInclude Include="BlobAnalysis.h" />
+    <ClInclude Include="BoardConfigWnd.h" />
+    <ClInclude Include="BoardListWnd.h" />
+    <ClInclude Include="BoardSkipPolicy.h" />
+    <ClInclude Include="CalibrationDef.h" />
+    <ClInclude Include="CalibrationWnd.h" />
+    <ClInclude Include="CaliPaneAlign.h" />
+    <ClInclude Include="CaliPaneDynamic.h" />
+    <ClInclude Include="CaliPaneStage.h" />
+    <ClInclude Include="CaliPaneTargetSetting.h" />
+    <ClInclude Include="CaliWndDynamicTune.h" />
+    <ClInclude Include="Camera Device\CameraCtrl.h" />
+    <ClInclude Include="Camera Device\Camera_Basic.h" />
+    <ClInclude Include="Camera Device\Camera_CoaxLinkQuadCXP12_Camera.h" />
+    <ClInclude Include="Camera Device\Camera_CoaxlinkQuadG3_Camera.h" />
+    <ClInclude Include="Camera Device\Camera_CoaxLink_Q_12A180F.h" />
+    <ClInclude Include="Camera Device\Camera_Coaxlink_VC_12MX_M180.h" />
+    <ClInclude Include="Camera Device\Camera_Define.h" />
+    <ClInclude Include="Camera Device\Camera_GrabLinkFull_CSC6M100BMP11.h" />
+    <ClInclude Include="Camera Device\Camera_GrabLinkFull_Q12A65Fm.h" />
+    <ClInclude Include="Camera Device\Camera_MatroxRapixoCXP12_Camera.h" />
+    <ClInclude Include="Camera Device\Camera_MatroxRapixoCXP6_Camera.h" />
+    <ClInclude Include="Camera Device\Camera_Teli_BU1203MC.h" />
+    <ClInclude Include="Camera Device\Camera_Teli_BU1207MCF.h" />
+    <ClInclude Include="CameraCtrlWnd.h" />
+    <ClInclude Include="ColorGroupSet.h" />
+    <ClInclude Include="ColorRGBVWnd.h" />
+    <ClInclude Include="ComponentAgentListWnd.h" />
+    <ClInclude Include="ComponentConfigWnd.h" />
+    <ClInclude Include="ComponentDefectAlarmListWnd.h" />
+    <ClInclude Include="ComponentDefectAlarmWnd.h" />
+    <ClInclude Include="ComponentListWnd.h" />
+    <ClInclude Include="ConnectorPinSettingsWnd.h" />
+    <ClInclude Include="CudaCtrlWnd.h" />
+    <ClInclude Include="CudaFunc.h" />
+    <ClInclude Include="CudaKernel.h" />
+    <ClInclude Include="DebugFormView.h" />
+    <ClInclude Include="DebugWnd.h" />
+    <ClInclude Include="DefectListWnd.h" />
+    <ClInclude Include="DialogBase.h" />
+    <ClInclude Include="DIB.h" />
+    <ClInclude Include="Draw3DWnd.h" />
+    <ClInclude Include="DtkBarcode.h" />
+    <ClInclude Include="EditBarcodeView.h" />
+    <ClInclude Include="EditComponentListDockPane.h" />
+    <ClInclude Include="EditFdView.h" />
+    <ClInclude Include="EditFormView.h" />
+    <ClInclude Include="EditImageBinaryWnd.h" />
+    <ClInclude Include="EditImageBlobWnd.h" />
+    <ClInclude Include="EditImageColorFilterWnd.h" />
+    <ClInclude Include="EditImageDockPane.h" />
+    <ClInclude Include="EditImagePatternWnd.h" />
+    <ClInclude Include="EditImageProcessPage.h" />
+    <ClInclude Include="EditImageView.h" />
+    <ClInclude Include="EditImageView3DPage.h" />
+    <ClInclude Include="EditLibraryDockPane.h" />
+    <ClInclude Include="EditLibraryWnd.h" />
+    <ClInclude Include="EditMainView.h" />
+    <ClInclude Include="EditMarkView.h" />
+    <ClInclude Include="EditModelListDockPane.h" />
+    <ClInclude Include="EditModelListPaneBar.h" />
+    <ClInclude Include="EditModelView.h" />
+    <ClInclude Include="EditPartNumberListDockPane.h" />
+    <ClInclude Include="EditPartNumberListPaneBar.h" />
+    <ClInclude Include="EditProjectMapDockPane.h" />
+    <ClInclude Include="EditResultDockPane.h" />
+    <ClInclude Include="EditResultPaneBar.h" />
+    <ClInclude Include="EditWndDockPane.h" />
+    <ClInclude Include="EditWndView.h" />
+    <ClInclude Include="eVision\EVisionLibDef.h" />
+    <ClInclude Include="eVision\EvsAPI.h" />
+    <ClInclude Include="eVision\EvsBarcode1D.h" />
+    <ClInclude Include="eVision\EvsBarcodeDataMatrix.h" />
+    <ClInclude Include="eVision\EvsBarcodeQRCode.h" />
+    <ClInclude Include="eVision\EvsImageBW8.h" />
+    <ClInclude Include="eVision\EvsImageC24.h" />
+    <ClInclude Include="eVision\EvsMatch.h" />
+    <ClInclude Include="eVision\EvsRoiBW8.h" />
+    <ClInclude Include="eVision\EvsRoiC24.h" />
+    <ClInclude Include="FdConfirmWnd.h" />
+    <ClInclude Include="FdListWnd.h" />
+    <ClInclude Include="FdSortWnd.h" />
+    <ClInclude Include="FilenameSyntax.h" />
+    <ClInclude Include="FilenameSyntaxWnd.h" />
+    <ClInclude Include="FingerprintDefine.h" />
+    <ClInclude Include="FingerprintDevice.h" />
+    <ClInclude Include="FingerprintWnd.h" />
+    <ClInclude Include="Fingerprint_AS608.h" />
+    <ClInclude Include="Fingerprint_base.h" />
+    <ClInclude Include="Fingerprint_PQIFPS_Reader.h" />
+    <ClInclude Include="HonBarcode.h" />
+    <ClInclude Include="ImageAPI.h" />
+    <ClInclude Include="ImageCombineWnd.h" />
+    <ClInclude Include="ImageConfigWnd.h" />
+    <ClInclude Include="ImageDebugWnd.h" />
+    <ClInclude Include="ImageMaskWnd.h" />
+    <ClInclude Include="ImagePhaseAllWnd.h" />
+    <ClInclude Include="ImagePhaseWnd.h" />
+    <ClInclude Include="ImageWnd.h" />
+    <ClInclude Include="InputBoxWnd.h" />
+    <ClInclude Include="InputComboxWnd.h" />
+    <ClInclude Include="InputDateTimeWnd.h" />
+    <ClInclude Include="InputListWnd.h" />
+    <ClInclude Include="ITSCommWnd.h" />
+    <ClInclude Include="JET8000.h" />
+    <ClInclude Include="JET8000MSGDef.h" />
+    <ClInclude Include="JetAlg\JunAlgorithm\ConfigFile.h" />
+    <ClInclude Include="JetAlg\JunAlgorithm\CPUAlignment.h" />
+    <ClInclude Include="JetAlg\JunAlgorithm\ImageProcessBaseStruct.h" />
+    <ClInclude Include="JetAlg\JunAlgorithm\JET_ImageFunction.h" />
+    <ClInclude Include="JetAlg\JunAlgorithm\JET_ImageModule.h" />
+    <ClInclude Include="JetAlg\JunAlgorithm\MeasurementBlackGlue.h" />
+    <ClInclude Include="JetAOI3DDefine.h" />
+    <ClInclude Include="JetAPIUtility.h" />
+    <ClInclude Include="JetBarcode.h" />
+    <ClInclude Include="JetBlob.h" />
+    <ClInclude Include="JetFieldDivider.h" />
+    <ClInclude Include="JetGroundEquation.h" />
+    <ClInclude Include="JetImage.h" />
+    <ClInclude Include="JetIniFile.h" />
+    <ClInclude Include="JETListCtrl.h" />
+    <ClInclude Include="JetLoadDll.h" />
+    <ClInclude Include="JetMatch.h" />
+    <ClInclude Include="JETMatrix.h" />
+    <ClInclude Include="JetMemDC.h" />
+    <ClInclude Include="JetMemory.h" />
+    <ClInclude Include="JETMFCListCtrl.h" />
+    <ClInclude Include="JETPropertyGridCtrl.h" />
+    <ClInclude Include="JETRibbonPanel.h" />
+    <ClInclude Include="JetSerial.h" />
+    <ClInclude Include="JETTreeCtrl.h" />
+    <ClInclude Include="JetTxtFile.h" />
+    <ClInclude Include="JetUSBCtrl.h" />
+    <ClInclude Include="JetZip.h" />
+    <ClInclude Include="Jpegfile.h" />
+    <ClInclude Include="JsonCtrl.h" />
+    <ClInclude Include="KNNClassify.h" />
+    <ClInclude Include="Light3DCtrl\CypressI2C.h" />
+    <ClInclude Include="Light3DCtrl\Light3DCtrl.h" />
+    <ClInclude Include="Light3DCtrl\Light3DDef.h" />
+    <ClInclude Include="Light3DCtrl\Light3DTiDLP.h" />
+    <ClInclude Include="Light3DCtrl\Light3DTiDLP4500.h" />
+    <ClInclude Include="Light3DCtrl\Light3DTiDLP4500Frmw.h" />
+    <ClInclude Include="Light3DCtrl\Light3DTiDLP4500Usb.h" />
+    <ClInclude Include="Light3DCtrl\Light3DTiDLP4710.h" />
+    <ClInclude Include="Light3DCtrl\Light3DTiDLPDef.h" />
+    <ClInclude Include="Light3DCtrl\Light3DTiDLP_Imp.h" />
+    <ClInclude Include="Light3DCtrl\Light3DTiDLP_Imp_4500.h" />
+    <ClInclude Include="Light3DCtrl\Light3DTiDLP_Imp_4500Frmw.h" />
+    <ClInclude Include="Light3DCtrl\Light3DTiDLP_Imp_4500Usb.h" />
+    <ClInclude Include="Light3DCtrl\Light3DTiDLP_Imp_4710.h" />
+    <ClInclude Include="Light3DTiDLPWnd.h" />
+    <ClInclude Include="LightCtrlBoardWnd.h" />
+    <ClInclude Include="LightCtrlBoard\LightCtrlBoard.h" />
+    <ClInclude Include="LightCtrlBoard\LightCtrlBoardDef.h" />
+    <ClInclude Include="LightCtrlBoard\LightCtrlBoardImp.h" />
+    <ClInclude Include="LightCtrlBoard\LightCtrlBoardImpArduino.h" />
+    <ClInclude Include="LightCtrlBoard\LightCtrlBoardImpFpga.h" />
+    <ClInclude Include="LoadBomWnd.h" />
+    <ClInclude Include="LoadCadxyWnd.h" />
+    <ClInclude Include="LogManager.h" />
+    <ClInclude Include="LogNode.h" />
+    <ClInclude Include="LogOperCtrl.h" />
+    <ClInclude Include="LogOperViewerWnd.h" />
+    <ClInclude Include="MachineStatusWnd.h" />
+    <ClInclude Include="MainDoc.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MapCoordinate.h" />
+    <ClInclude Include="MessageBoxWnd.h" />
+    <ClInclude Include="MES\ITSFileChecker.h" />
+    <ClInclude Include="MES\ITSLinker.h" />
+    <ClInclude Include="MES\ITSRabbitMQ.h" />
+    <ClInclude Include="MES\MES_Basic.h" />
+    <ClInclude Include="MES\MES_Class.h" />
+    <ClInclude Include="MES\MES_Imp.h" />
+    <ClInclude Include="MES\MES_IPS.h" />
+    <ClInclude Include="MES\MES_IPS_Define.h" />
+    <ClInclude Include="MES\MES_ITS.h" />
+    <ClInclude Include="MES\MES_ITS_Define.h" />
+    <ClInclude Include="MES\MES_MTS.h" />
+    <ClInclude Include="MiM\MimAPI.h" />
+    <ClInclude Include="MiM\MimImageBW8.h" />
+    <ClInclude Include="MiM\MimImageC24.h" />
+    <ClInclude Include="MiM\MimLibDef.h" />
+    <ClInclude Include="MiM\MimMatch.h" />
+    <ClInclude Include="MiM\MimRoiBW8.h" />
+    <ClInclude Include="MiM\MimRoiC24.h" />
+    <ClInclude Include="ModelAddAllWnd.h" />
+    <ClInclude Include="ModelGroupWnd.h" />
+    <ClInclude Include="ModelPropertyWnd.h" />
+    <ClInclude Include="ModelUpdateToGroupWnd.h" />
+    <ClInclude Include="ModelWnd.h" />
+    <ClInclude Include="Motion Device\MotionAxis.h" />
+    <ClInclude Include="Motion Device\MotionNode.h" />
+    <ClInclude Include="Motion Device\Motion_Basic.h" />
+    <ClInclude Include="Motion Device\Motion_Define.h" />
+    <ClInclude Include="Motion Device\Motion_Lib_Module.h" />
+    <ClInclude Include="Motion Device\Motion_PCE_M114GL.h" />
+    <ClInclude Include="Motion Device\Motion_PCIE_L221_B1D0.h" />
+    <ClInclude Include="Motion Device\Motion_PCI_M114GL.h" />
+    <ClInclude Include="MotionCtrlWnd.h" />
+    <ClInclude Include="MotionParamPane.h" />
+    <ClInclude Include="MotionStatusPane.h" />
+    <ClInclude Include="NewPanelWizardWnd.h" />
+    <ClInclude Include="NewProjectFiducialPane.h" />
+    <ClInclude Include="NewProjectIntrodPane.h" />
+    <ClInclude Include="NewProjectLoadCadxyPane.h" />
+    <ClInclude Include="NewProjectLoadLibraryPane.h" />
+    <ClInclude Include="NewProjectPaneDivideDistrict.h" />
+    <ClInclude Include="NewProjectPanelAlignPane.h" />
+    <ClInclude Include="NewProjectRegionImagePane.h" />
+    <ClInclude Include="NewProjectWizardWnd.h" />
+    <ClInclude Include="OnlineFormView.h" />
+    <ClInclude Include="OnlineFormView_Dual.h" />
+    <ClInclude Include="OpenCV_MatAllocator.h" />
+    <ClInclude Include="OpenGLWnd.h" />
+    <ClInclude Include="PageDialogbarPartNumber.h" />
+    <ClInclude Include="PageSplitterWnd.h" />
+    <ClInclude Include="PanelListWnd.h" />
+    <ClInclude Include="PaneTabCtrl.h" />
+    <ClInclude Include="ParamUni.h" />
+    <ClInclude Include="PatternParam.h" />
+    <ClInclude Include="PlcCtrlWnd.h" />
+    <ClInclude Include="PlcLaneAdjustPane.h" />
+    <ClInclude Include="PlcLaneStatusPane.h" />
+    <ClInclude Include="PlcNodeListPane.h" />
+    <ClInclude Include="PlcParamListPane.h" />
+    <ClInclude Include="PlcTowerLightPane.h" />
+    <ClInclude Include="Plc_Basic.h" />
+    <ClInclude Include="Plc_Define.h" />
+    <ClInclude Include="Plc_Vigor.h" />
+    <ClInclude Include="ProjectCodeListWnd.h" />
+    <ClInclude Include="ProjectColorWnd.h" />
+    <ClInclude Include="ProjectCompareWnd.h" />
+    <ClInclude Include="ProjectDivideDistrictWnd.h" />
+    <ClInclude Include="ProjectFieldConfigWnd.h" />
+    <ClInclude Include="ProjectGroupConfigWnd.h" />
+    <ClInclude Include="ProjectLibraryWnd.h" />
+    <ClInclude Include="ProjectListWnd.h" />
+    <ClInclude Include="ProjectMapMaskWnd.h" />
+    <ClInclude Include="ProjectMapPane.h" />
+    <ClInclude Include="ProjectMapSpecRegionWnd.h" />
+    <ClInclude Include="ProjectMapWnd.h" />
+    <ClInclude Include="ProjectMarkWnd.h" />
+    <ClInclude Include="ProjectParamBasicPane.h" />
+    <ClInclude Include="ProjectParameterDef.h" />
+    <ClInclude Include="ProjectParamPaneAlarm.h" />
+    <ClInclude Include="ProjectParamPaneBarcode.h" />
+    <ClInclude Include="ProjectParamPaneRepair.h" />
+    <ClInclude Include="ProjectParamPaneSave.h" />
+    <ClInclude Include="ProjectParamPaneSpecTest.h" />
+    <ClInclude Include="ProjectParamPaneVersionCode.h" />
+    <ClInclude Include="ProjectParamWnd.h" />
+    <ClInclude Include="ProjectRegionMapWnd.h" />
+    <ClInclude Include="PropertiesWnd.h" />
+    <ClInclude Include="RemoteParamWnd.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Rockey4ND\Rockey4ND.h" />
+    <ClInclude Include="Rockey4ND\Rockey4ND_JET.h" />
+    <ClInclude Include="RS232.H" />
+    <ClInclude Include="RulerWnd.h" />
+    <ClInclude Include="SmartChartStaticWnd.h" />
+    <ClInclude Include="SocketClientWnd.h" />
+    <ClInclude Include="Socket\JetSocket.h" />
+    <ClInclude Include="SortObj.h" />
+    <ClInclude Include="SpaceBaseParamWnd.h" />
+    <ClInclude Include="SpaceNoiseFilterParamWnd.h" />
+    <ClInclude Include="SPIComponent.h" />
+    <ClInclude Include="SPIPad.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="SystemAdvancePane.h" />
+    <ClInclude Include="SystemAIPane.h" />
+    <ClInclude Include="SystemAuthorizationPane.h" />
+    <ClInclude Include="SystemBasicPane.h" />
+    <ClInclude Include="SystemColorPane.h" />
+    <ClInclude Include="SystemConfigWnd.h" />
+    <ClInclude Include="SystemConvertWnd.h" />
+    <ClInclude Include="SystemDebugPane.h" />
+    <ClInclude Include="SystemDefaultPane.h" />
+    <ClInclude Include="SystemFolderPane.h" />
+    <ClInclude Include="SystemHASIPane.h" />
+    <ClInclude Include="SystemInitialWnd.h" />
+    <ClInclude Include="SystemLogPane.h" />
+    <ClInclude Include="SystemM2MPane.h" />
+    <ClInclude Include="SystemMESPane.h" />
+    <ClInclude Include="SystemOfflinePane.h" />
+    <ClInclude Include="SystemOnlinePane.h" />
+    <ClInclude Include="SystemParameterDef.h" />
+    <ClInclude Include="SystemParamPane.h" />
+    <ClInclude Include="SystemThreadPane.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TreeCtrlComponent.h" />
+    <ClInclude Include="TreeCtrlDef.h" />
+    <ClInclude Include="UserHotKeyCtrl.h" />
+    <ClInclude Include="UserHotKeyDef.h" />
+    <ClInclude Include="UserHotKeyItem.h" />
+    <ClInclude Include="UserLevelWnd.h" />
+    <ClInclude Include="UserRegisterWnd.h" />
+    <ClInclude Include="VersionDefine.h" />
+    <ClInclude Include="WndAlgPropertyDef.h" />
+    <ClInclude Include="WndDefectItem.h" />
+    <ClInclude Include="WndDefectItemWnd.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\icon1.ico" />
+    <CustomBuild Include="res\JET8000.ico" />
+    <CustomBuild Include="res\JET8000.rc2">
+      <FileType>RC</FileType>
+    </CustomBuild>
+    <CustomBuild Include="res\LED_Blue_Large.bmp" />
+    <CustomBuild Include="res\LED_Blue_Media.bmp" />
+    <CustomBuild Include="res\LED_Gray_Large.bmp" />
+    <CustomBuild Include="res\LED_Gray_Median.bmp" />
+    <CustomBuild Include="res\LED_Gray_Small.bmp" />
+    <CustomBuild Include="res\LED_Green_Large.bmp" />
+    <CustomBuild Include="res\LED_Green_Median.bmp" />
+    <CustomBuild Include="res\LED_Green_Small.bmp" />
+    <CustomBuild Include="res\LED_Red_Large.bmp" />
+    <CustomBuild Include="res\LED_Red_Median.bmp" />
+    <CustomBuild Include="res\LED_Red_Small.bmp" />
+    <CustomBuild Include="res\LED_Yellow_Large.bmp" />
+    <CustomBuild Include="res\LED_Yellow_Median.bmp" />
+    <CustomBuild Include="res\MainDoc.ico" />
+    <CustomBuild Include="res\Toolbar.bmp" />
+    <CustomBuild Include="JET8000.reg">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="CudaKernel.cu">
+      <FileType>Document</FileType>
+      <MaxRegCount Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">32768</MaxRegCount>
+      <PtxAsOptionV Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</PtxAsOptionV>
+      <Runtime Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MTd</Runtime>
+      <Runtime Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">InheritFromHost</Runtime>
+      <Runtime Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">MTd</Runtime>
+      <Runtime Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|x64'">InheritFromHost</Runtime>
+      <MaxRegCount Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">32768</MaxRegCount>
+      <PtxAsOptionV Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">true</PtxAsOptionV>
+      <PtxAsOptionV Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|x64'">true</PtxAsOptionV>
+      <MaxRegCount Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">0</MaxRegCount>
+      <MaxRegCount Condition="'$(Configuration)|$(Platform)'=='Release|x64'">0</MaxRegCount>
+      <PtxAsOptionV Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</PtxAsOptionV>
+      <PtxAsOptionV Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</PtxAsOptionV>
+      <Runtime Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MT</Runtime>
+      <Runtime Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MT</Runtime>
+      <MaxRegCount Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">0</MaxRegCount>
+      <MaxRegCount Condition="'$(Configuration)|$(Platform)'=='Debug_Release|Win32'">0</MaxRegCount>
+      <PtxAsOptionV Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">false</PtxAsOptionV>
+      <PtxAsOptionV Condition="'$(Configuration)|$(Platform)'=='Debug_Release|Win32'">false</PtxAsOptionV>
+      <PtxAsOptionV Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|x64'">false</PtxAsOptionV>
+      <PtxAsOptionV Condition="'$(Configuration)|$(Platform)'=='Debug_Release|x64'">false</PtxAsOptionV>
+      <Runtime Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">MT</Runtime>
+      <Runtime Condition="'$(Configuration)|$(Platform)'=='Debug_Release|Win32'">MT</Runtime>
+      <Runtime Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|x64'">InheritFromHost</Runtime>
+      <Runtime Condition="'$(Configuration)|$(Platform)'=='Debug_Release|x64'">InheritFromHost</Runtime>
+      <CodeGeneration Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|x64'">%(CodeGeneration)</CodeGeneration>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="res\bitmap2.bmp" />
+    <None Include="res\Empty_IconM.bmp" />
+    <None Include="res\Empty_IconS.bmp" />
+    <None Include="res\Main.bmp" />
+    <None Include="res\modelicon\bitmap2.bmp" />
+    <None Include="res\modelicon\bitmap6.bmp" />
+    <None Include="res\ModelIcon\ModelIconBGA_M.bmp" />
+    <None Include="res\ModelIcon\ModelIconBGA_S.bmp" />
+    <None Include="res\ModelIcon\ModelIconCAE_M.bmp" />
+    <None Include="res\ModelIcon\ModelIconCAE_S.bmp" />
+    <None Include="res\ModelIcon\ModelIconChipC_M.bmp" />
+    <None Include="res\ModelIcon\ModelIconChipC_S.bmp" />
+    <None Include="res\ModelIcon\ModelIconChipI_M.bmp" />
+    <None Include="res\ModelIcon\ModelIconChipI_S.bmp" />
+    <None Include="res\ModelIcon\ModelIconChipLED_M.bmp" />
+    <None Include="res\ModelIcon\ModelIconChipLED_S.bmp" />
+    <None Include="res\ModelIcon\ModelIconChipL_M.bmp" />
+    <None Include="res\ModelIcon\ModelIconChipL_S.bmp" />
+    <None Include="res\ModelIcon\ModelIconChipR_M.bmp" />
+    <None Include="res\ModelIcon\ModelIconChipR_S.bmp" />
+    <None Include="res\ModelIcon\ModelIconCN_M.bmp" />
+    <None Include="res\ModelIcon\ModelIconCN_S.bmp" />
+    <None Include="res\ModelIcon\ModelIconCON_M.bmp" />
+    <None Include="res\ModelIcon\ModelIconCON_S.bmp" />
+    <None Include="res\ModelIcon\ModelIconDFN_M.bmp" />
+    <None Include="res\ModelIcon\ModelIconDFN_S.bmp" />
+    <None Include="res\ModelIcon\ModelIconDIP_M.bmp" />
+    <None Include="res\ModelIcon\ModelIconDIP_S.bmp" />
+    <None Include="res\ModelIcon\ModelIconEmpty_M.bmp" />
+    <None Include="res\ModelIcon\ModelIconEmpty_S.bmp" />
+    <None Include="res\ModelIcon\ModelIconGoldenFinger_M.bmp" />
+    <None Include="res\ModelIcon\ModelIconGoldenFinger_S.bmp" />
+    <None Include="res\ModelIcon\ModelIconIC_M.bmp" />
+    <None Include="res\ModelIcon\ModelIconIC_S.bmp" />
+    <None Include="res\ModelIcon\ModelIconLead_M.bmp" />
+    <None Include="res\ModelIcon\ModelIconLead_S.bmp" />
+    <None Include="res\ModelIcon\ModelIconLEDN_M.bmp" />
+    <None Include="res\ModelIcon\ModelIconLEDN_S.bmp" />
+    <None Include="res\ModelIcon\ModelIconMELF_M.bmp" />
+    <None Include="res\ModelIcon\ModelIconMELF_S.bmp" />
+    <None Include="res\ModelIcon\ModelIconNoLead_M.bmp" />
+    <None Include="res\ModelIcon\ModelIconNoLead_S.bmp" />
+    <None Include="res\ModelIcon\ModelIconOthers_M.bmp" />
+    <None Include="res\ModelIcon\ModelIconOthers_S.bmp" />
+    <None Include="res\ModelIcon\ModelIconPadComponent_M.bmp" />
+    <None Include="res\ModelIcon\ModelIconPadComponent_S.bmp" />
+    <None Include="res\ModelIcon\ModelIconPLCC_M.bmp" />
+    <None Include="res\ModelIcon\ModelIconPLCC_S.bmp" />
+    <None Include="res\ModelIcon\ModelIconQFN_M.bmp" />
+    <None Include="res\ModelIcon\ModelIconQFN_S.bmp" />
+    <None Include="res\ModelIcon\ModelIconQFP_M.bmp" />
+    <None Include="res\ModelIcon\ModelIconQFP_S.bmp" />
+    <None Include="res\ModelIcon\ModelIconRN_M.bmp" />
+    <None Include="res\ModelIcon\ModelIconRN_S.bmp" />
+    <None Include="res\ModelIcon\ModelIconSOJ_M.bmp" />
+    <None Include="res\ModelIcon\ModelIconSOJ_S.bmp" />
+    <None Include="res\ModelIcon\ModelIconSOP_M.bmp" />
+    <None Include="res\ModelIcon\ModelIconSOP_S.bmp" />
+    <None Include="res\ModelIcon\ModelIconSOTA_M.bmp" />
+    <None Include="res\ModelIcon\ModelIconSOT_M.bmp" />
+    <None Include="res\ModelIcon\ModelIconSOT_Power_M.bmp" />
+    <None Include="res\ModelIcon\ModelIconSOT_Power_S.bmp" />
+    <None Include="res\ModelIcon\ModelIconSOT_S.bmp" />
+    <None Include="res\ModelIcon\ModelIconTANT_M.bmp" />
+    <None Include="res\ModelIcon\ModelIconTANT_S.bmp" />
+    <None Include="res\Model_Icon_Empty_M.bmp" />
+    <None Include="res\Model_Icon_Empty_S.bmp" />
+    <None Include="res\ProjectTreeIcon.bmp" />
+    <None Include="res\PropertyBtn.bmp" />
+    <None Include="res\ribbon1.mfcribbon-ms" />
+    <None Include="res\RibbonGlobalImage.bmp" />
+    <None Include="res\RibbonIconLarge.BMP" />
+    <None Include="res\RibbonIconSmall.BMP" />
+    <None Include="res\RibbonSmallImage.bmp" />
+    <None Include="SmartChart\JETSmartChart.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Main_Offline.BMP" />
+    <Image Include="res\ModelIcon\ModelIconOSC_M.bmp" />
+    <Image Include="res\ModelIcon\ModelIconOSC_S.bmp" />
+    <Image Include="res\SORT_BTLR.bmp" />
+    <Image Include="res\SORT_BTLR_S.bmp" />
+    <Image Include="res\SORT_BTRL.bmp" />
+    <Image Include="res\SORT_BTRL_S.bmp" />
+    <Image Include="res\SORT_LRBT.bmp" />
+    <Image Include="res\SORT_LRBT_S.bmp" />
+    <Image Include="res\SORT_LRTB.bmp" />
+    <Image Include="res\SORT_LRTB_S.bmp" />
+    <Image Include="res\SORT_RLBT.bmp" />
+    <Image Include="res\SORT_RLBT_S.bmp" />
+    <Image Include="res\SORT_RLTB.bmp" />
+    <Image Include="res\SORT_RLTB_S.bmp" />
+    <Image Include="res\SORT_TBLR.bmp" />
+    <Image Include="res\SORT_TBLR_S.bmp" />
+    <Image Include="res\SORT_TBRL.bmp" />
+    <Image Include="res\SORT_TBRL_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="MachineConfig.txt" />
+    <Text Include="UpdateList.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 9.1.targets" />
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="JET8000.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
