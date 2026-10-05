@@ -1,88 +1,60 @@
 #ifndef BOARD_SKIP_POLICY_H
 #define BOARD_SKIP_POLICY_H
 
-// –瓂笵Τ度パ瑈祘局Τ巨
+// –瓂笵璸计 PCB 碞狐糤
 class CBoardSkipPolicy
 {
 public:
-    /// <summary>﹍て铬狾篈</summary>
+    /// <summary>﹍て铬狾砞﹚籔璸计</summary>
     CBoardSkipPolicy()
-        : m_Enabled(false), m_InspectCount(1), m_SkipCount(2),
-          m_SkipPhase(false), m_CompletedCount(0),
-          m_BoardActive(false), m_CurrentBoardSkipped(false)
+        : m_Enabled(false), m_InspectCount(1), m_SkipCount(2), m_CycleCount(3), m_BoardCount(0)
     {
     }
 
     /// <summary>砞﹚铬狾砏玥砞璸计</summary>
     bool Configure(bool enabled, int inspectCount, int skipCount)
     {
-        if (m_BoardActive || inspectCount < 1 || skipCount < 1)
+        if (inspectCount < 1 || skipCount < 1)
         {
             return false;
         }
         m_Enabled = enabled;
         m_InspectCount = inspectCount;
         m_SkipCount = skipCount;
+        m_CycleCount = static_cast<unsigned int>(m_InspectCount)
+            + static_cast<unsigned int>(m_SkipCount);
         Reset();
         return true;
     }
 
-    /// <summary>㏕﹚セ眎狾琌铬狾</summary>
-    bool BeginBoard()
+    /// <summary>PCB 碞狐璸计ЧΘ近眖穝璸计</summary>
+    void BoardCount()
     {
-        if (!m_BoardActive)
+        if (m_BoardCount >= m_CycleCount)
         {
-            m_CurrentBoardSkipped = m_Enabled && m_SkipPhase;
-            m_BoardActive = true;
+            m_BoardCount = 0;
         }
-        return m_CurrentBoardSkipped;
+        ++m_BoardCount;
     }
 
-    /// <summary>絋粄セ眎狾琌铬狾</summary>
+    /// <summary>絋粄セΩ琌铬狾ぃэ跑璸计</summary>
     bool IsCurrentBoardSkipped() const
     {
-        return m_BoardActive && m_CurrentBoardSkipped;
+        return m_Enabled && m_BoardCount > static_cast<unsigned int>(m_InspectCount);
     }
 
-    /// <summary>ЧΘセ眎狾崩秈铬狾璸计</summary>
-    bool CompleteBoard()
-    {
-        if (!m_BoardActive)
-        {
-            return false;
-        }
-        if (m_Enabled)
-        {
-            ++m_CompletedCount;
-            const int countLimit = m_SkipPhase ? m_SkipCount : m_InspectCount;
-            if (m_CompletedCount >= countLimit)
-            {
-                m_CompletedCount = 0;
-                m_SkipPhase = !m_SkipPhase;
-            }
-        }
-        m_BoardActive = false;
-        m_CurrentBoardSkipped = false;
-        return true;
-    }
-
-    /// <summary>砞铬狾璸计籔セ眎狾篈</summary>
+    /// <summary>砞璸计Ω眖浪代秨﹍</summary>
     void Reset()
     {
-        m_SkipPhase = false;
-        m_CompletedCount = 0;
-        m_BoardActive = false;
-        m_CurrentBoardSkipped = false;
+        m_BoardCount = 0;
     }
 
 private:
     bool m_Enabled;
     int m_InspectCount;
     int m_SkipCount;
-    bool m_SkipPhase;
-    int m_CompletedCount;
-    bool m_BoardActive;
-    bool m_CurrentBoardSkipped;
+    unsigned int m_CycleCount;
+    unsigned int m_BoardCount;
 };
 
 #endif

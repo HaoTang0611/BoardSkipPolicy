@@ -19,6 +19,7 @@
 #include "AlgBinaryParam.h"
 #include "FilenameSyntax.h"
 #include "SystemParameterDef.h"
+#include "BoardSkipPolicy.h"
 //-------------------------------------------------------------------------------------//
 #define MAX_OPEN_MP_COUNT             64//最多同時64組Open MP數量
 #define MAX_THREAD_COUNT_SLICE_FILL    8//最多同時2組相機影像分割執行緒
@@ -106,6 +107,11 @@ public:
 	static bool                GetSystemParameterStringByID(SYSTEM_PARAM_ID ParamID, const TSystemParameter &SysParam, CString &String);//取得系統參數	
 	//---------------------------------------------------------------------------------//	
 private:
+	// 各軌獨立保存跳板決策；逐板通知於下一步接入。
+	CBoardSkipPolicy           m_BoardSkipPolicyLA;
+	CBoardSkipPolicy           m_BoardSkipPolicyLB;
+	void                       ResetBoardSkipPolicies();//重設雙軌跳板狀態
+	void                       BeginOnlineBoardSkipPolicy(TOnlineProcParam &Param);//計算 PCB 就緒次數
 	//---------------------------------------------------------------------------------//	
 	std::map<int, std::string> m_AsciiTable;//ASCII 表格
 	//---------------------------------------------------------------------------------//

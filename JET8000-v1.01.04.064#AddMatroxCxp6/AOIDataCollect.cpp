@@ -48,6 +48,9 @@ CAOIDataCollect AOIDataCollect;
 //-------------------------------------------------------------------------------------//
 CAOIDataCollect::CAOIDataCollect()
 {	
+	// 暫時固定 Input：檢測1片、跳過2片。
+	m_BoardSkipPolicyLA.Configure(true, 1, 2);
+	m_BoardSkipPolicyLB.Configure(true, 1, 2);
 	m_SaveDebugMessage_RGN = false;
 	CString str;
 	size_t  i=0;

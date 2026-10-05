@@ -6,7 +6,7 @@
 #if _MSC_VER == VC_6
 	#define OFFLINE_VERSION   //定義是否為OFF LINE版本
 #endif
-	//#define OFFLINE_VERSION   //定義是否為OFF LINE版本
+//	#define OFFLINE_VERSION   //定義是否為OFF LINE版本
 //----------------------------------------------------------------------------//
 //JET8000-v1.01.04.063-Alan
 //----------------------------------------------------------------------------//

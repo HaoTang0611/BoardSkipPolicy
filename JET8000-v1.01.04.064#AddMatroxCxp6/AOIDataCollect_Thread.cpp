@@ -8651,7 +8651,8 @@ bool CAOIDataCollect::ExecOnlineInspectionStopFn(ONLINE_STATE_MODE State)//°õ¦æ½
 
 		SetOnlineStateMode(ONLINE_STATE_INSPECTION_STOP);				
 	}
-	StopConveyerAutoRunThread(true);
+	if ( StopConveyerAutoRunThread(true) == false )
+	{ return false; }
 	ResetSwitchMultiLine_NextLaneID();	
 	PlcCtrlPtr->UpdateTowerLightState_Stop();
 	SaveAOIMonitorStatus(ONLINE_STATE_INSPECTION_STOP, NULL);	

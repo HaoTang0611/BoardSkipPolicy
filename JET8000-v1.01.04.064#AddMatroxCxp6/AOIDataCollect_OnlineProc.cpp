@@ -484,6 +484,27 @@ CAOIProject* CAOIDataCollect::GetOnlineProcParamProject(TOnlineProcParam &Param)
 	return ProjectPtr;
 }
 //-------------------------------------------------------------------------------------//
+/// <summary>重設雙軌跳板計數與狀態</summary>
+void CAOIDataCollect::ResetBoardSkipPolicies()
+{
+	m_BoardSkipPolicyLA.Reset();
+	m_BoardSkipPolicyLB.Reset();
+}
+//-------------------------------------------------------------------------------------//
+/// <summary>計算 PCB 就緒次數</summary>
+void CAOIDataCollect::BeginOnlineBoardSkipPolicy(TOnlineProcParam &Param)
+{
+	switch ( Param.eLaneID )
+	{
+	case LANE_ID_A:
+		m_BoardSkipPolicyLA.BoardCount();
+		break;
+	case LANE_ID_B:
+		m_BoardSkipPolicyLB.BoardCount();
+		break;
+	}
+}
+//-------------------------------------------------------------------------------------//
 bool CAOIDataCollect::GetOnlineProcLaneRunBypassMode(TOnlineProcParam &Param) const
 {
 	bool bBypass=false;
@@ -500,7 +521,7 @@ bool CAOIDataCollect::GetOnlineProcLaneRunBypassMode(TOnlineProcParam &Param) co
 		bool bPreRunMode = Param.bConveyerPreRunMode;
 		if ( false == bPreRunMode )
 		{
-			LANE_WORK_MODE LaneWorkMode;
+			LANE_WORK_MODE LaneWorkMode=LANE_WORK_DISABLE;
 			LANE_STATE_MODE LaneStateMode;
 			switch ( Param.eLaneID )
 			{
@@ -513,6 +534,20 @@ bool CAOIDataCollect::GetOnlineProcLaneRunBypassMode(TOnlineProcParam &Param) co
 			LaneStateMode = GetOnlineLaneTaskState(Param.eLaneID);
 			if (LANE_STATE_BYPASS == LaneStateMode)
 			{	bBypass = true;	}
+
+            // 正常運作時，將本張板的跳板決策交給既有直通流程。
+            if (false == bBypass && LANE_WORK_RUN == LaneWorkMode)
+            {
+                switch (LaneID)
+                {
+                case LANE_ID_A:
+                    bBypass = m_BoardSkipPolicyLA.IsCurrentBoardSkipped();
+                    break;
+                case LANE_ID_B:
+                    bBypass = m_BoardSkipPolicyLB.IsCurrentBoardSkipped();
+                    break;
+                }
+            }
 		}
 	}	
 	return bBypass;
@@ -756,6 +791,7 @@ bool CAOIDataCollect::ExecOnlineProcPCBReady(TOnlineProcParam &Param)//線上檢測-
 	TASK_MODE TaskMode = Param.eTaskMode;//任務模式		
 	Param.eWndMessageMode = WND_MESSAGE_SEND;
 	
+	BeginOnlineBoardSkipPolicy(Param);
 	if ( GetOnlineProcLaneRunBypassMode(Param) == true )
 	{	return ExecOnlineProcLaneBypass(Param);	}
 
