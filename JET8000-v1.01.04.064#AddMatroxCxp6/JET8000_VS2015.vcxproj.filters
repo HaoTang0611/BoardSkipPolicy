@@ -1372,6 +1372,9 @@
     <ClCompile Include="Camera Device\Camera_MatroxRapixoCXP6_Camera.cpp">
       <Filter>Camera Device</Filter>
     </ClCompile>
+    <ClCompile Include="BoardSkipPolicy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AOIDataCollect.h">

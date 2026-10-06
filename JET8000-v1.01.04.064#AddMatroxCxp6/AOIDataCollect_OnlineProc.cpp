@@ -484,25 +484,39 @@ CAOIProject* CAOIDataCollect::GetOnlineProcParamProject(TOnlineProcParam &Param)
 	return ProjectPtr;
 }
 //-------------------------------------------------------------------------------------//
-/// <summary>重設雙軌跳板計數與狀態</summary>
+/// <summary>重設雙軌跳板計數</summary>
 void CAOIDataCollect::ResetBoardSkipPolicies()
 {
 	m_BoardSkipPolicyLA.Reset();
 	m_BoardSkipPolicyLB.Reset();
 }
 //-------------------------------------------------------------------------------------//
-/// <summary>計算 PCB 就緒次數</summary>
-void CAOIDataCollect::BeginOnlineBoardSkipPolicy(TOnlineProcParam &Param)
+/// <summary>增加指定軌道的跳板計數</summary>
+void CAOIDataCollect::IncrementBoardCountForSkipPolicy(TOnlineProcParam &Param)
 {
 	switch ( Param.eLaneID )
 	{
 	case LANE_ID_A:
-		m_BoardSkipPolicyLA.BoardCount();
+		m_BoardSkipPolicyLA.IncrementBoardCount();
 		break;
 	case LANE_ID_B:
-		m_BoardSkipPolicyLB.BoardCount();
+		m_BoardSkipPolicyLB.IncrementBoardCount();
 		break;
 	}
+}
+//-------------------------------------------------------------------------------------//
+/// <summary>查詢指定軌道本片是否依跳板規則跳過</summary>
+bool CAOIDataCollect::IsCurrentBoardSkippedByPolicy(LANE_ID laneID) const
+{
+    switch (laneID)
+    {
+    case LANE_ID_A:
+        return m_BoardSkipPolicyLA.IsCurrentBoardSkipped();
+    case LANE_ID_B:
+        return m_BoardSkipPolicyLB.IsCurrentBoardSkipped();
+    default:
+        return false;
+    }
 }
 //-------------------------------------------------------------------------------------//
 bool CAOIDataCollect::GetOnlineProcLaneRunBypassMode(TOnlineProcParam &Param) const
@@ -535,18 +549,10 @@ bool CAOIDataCollect::GetOnlineProcLaneRunBypassMode(TOnlineProcParam &Param) co
 			if (LANE_STATE_BYPASS == LaneStateMode)
 			{	bBypass = true;	}
 
-            // 正常運作時，將本張板的跳板決策交給既有直通流程。
+            // 非直通且軌道為正常運作模式時，依跳板規則判斷本片是否跳過檢測。
             if (false == bBypass && LANE_WORK_RUN == LaneWorkMode)
             {
-                switch (LaneID)
-                {
-                case LANE_ID_A:
-                    bBypass = m_BoardSkipPolicyLA.IsCurrentBoardSkipped();
-                    break;
-                case LANE_ID_B:
-                    bBypass = m_BoardSkipPolicyLB.IsCurrentBoardSkipped();
-                    break;
-                }
+                bBypass = IsCurrentBoardSkippedByPolicy(LaneID);
             }
 		}
 	}	
@@ -791,7 +797,7 @@ bool CAOIDataCollect::ExecOnlineProcPCBReady(TOnlineProcParam &Param)//線上檢測-
 	TASK_MODE TaskMode = Param.eTaskMode;//任務模式		
 	Param.eWndMessageMode = WND_MESSAGE_SEND;
 	
-	BeginOnlineBoardSkipPolicy(Param);
+	IncrementBoardCountForSkipPolicy(Param);
 	if ( GetOnlineProcLaneRunBypassMode(Param) == true )
 	{	return ExecOnlineProcLaneBypass(Param);	}
 

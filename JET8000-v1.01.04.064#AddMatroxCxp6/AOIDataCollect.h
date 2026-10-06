@@ -111,7 +111,8 @@ private:
 	CBoardSkipPolicy           m_BoardSkipPolicyLA;
 	CBoardSkipPolicy           m_BoardSkipPolicyLB;
 	void                       ResetBoardSkipPolicies();//重設雙軌跳板狀態
-	void                       BeginOnlineBoardSkipPolicy(TOnlineProcParam &Param);//計算 PCB 就緒次數
+	void                       IncrementBoardCountForSkipPolicy(TOnlineProcParam &Param);//增加指定軌道的抽檢板子計數
+	bool                       IsCurrentBoardSkippedByPolicy(LANE_ID laneID) const;//查詢指定軌道本片是否依抽檢規則跳過，不改變計數
 	//---------------------------------------------------------------------------------//	
 	std::map<int, std::string> m_AsciiTable;//ASCII 表格
 	//---------------------------------------------------------------------------------//

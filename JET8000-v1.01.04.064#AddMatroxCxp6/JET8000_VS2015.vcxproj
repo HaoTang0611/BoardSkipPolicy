@@ -826,6 +826,7 @@
     <ClCompile Include="BlobAnalysis.cpp" />
     <ClCompile Include="BoardConfigWnd.cpp" />
     <ClCompile Include="BoardListWnd.cpp" />
+    <ClCompile Include="BoardSkipPolicy.cpp" />
     <ClCompile Include="CalibrationWnd.cpp" />
     <ClCompile Include="CaliPaneAlign.cpp" />
     <ClCompile Include="CaliPaneDynamic.cpp" />
